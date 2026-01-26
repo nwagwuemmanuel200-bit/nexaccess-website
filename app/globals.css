@@ -1,14 +1,10 @@
 :root {
-  --primary: #0B1F3A;     /* Deep corporate blue */
-  --secondary: #1F4FD8;   /* Action blue */
-  --accent: #1BA97F;     /* Trust green */
-  
-  --text-dark: #0F172A;
-  --text-muted: #64748B;
-
+  --primary: #0B1F3A;
+  --secondary: #1F4FD8;
+  --accent: #1BA97F;
+  --text-dark: #111111;
+  --text-muted: #6B7280;
   --bg-light: #F9FAFB;
-  --bg-section: #FFFFFF;
-  --bg-soft: #F1F5F9;
 }
 
 body {
