@@ -1,18 +1,18 @@
 export default function HomePage() {
   return (
-    <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "40px" }}>
+    <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "40px 20px" }}>
 
       {/* ================= HERO SECTION ================= */}
       <section
         style={{
           background: "linear-gradient(135deg, #0B1F3A 0%, #1F4FD8 100%)",
           color: "white",
-          padding: "120px 40px",
+          padding: "100px 40px",
           borderRadius: "24px",
           marginBottom: "100px"
         }}
       >
-        <h1 style={{ fontSize: "48px", fontWeight: 700, marginBottom: "20px" }}>
+        <h1 style={{ fontSize: "48px", fontWeight: 700, marginBottom: "16px" }}>
           NexAccess Global System
         </h1>
 
@@ -21,13 +21,20 @@ export default function HomePage() {
           hospitals, malls, and enterprise campuses.
         </p>
 
-        <div style={{ marginTop: "40px", display: "flex", gap: "16px", flexWrap: "wrap" }}>
+        <div
+          style={{
+            marginTop: "32px",
+            display: "flex",
+            gap: "16px",
+            flexWrap: "wrap"
+          }}
+        >
           <a
             href="#solutions"
             style={{
+              padding: "14px 22px",
               background: "white",
               color: "#0B1F3A",
-              padding: "14px 22px",
               borderRadius: "6px",
               fontWeight: 600
             }}
@@ -38,9 +45,9 @@ export default function HomePage() {
           <a
             href="/investors"
             style={{
+              padding: "14px 22px",
               border: "1px solid white",
               color: "white",
-              padding: "14px 22px",
               borderRadius: "6px",
               fontWeight: 600
             }}
@@ -51,9 +58,9 @@ export default function HomePage() {
           <a
             href="#contact"
             style={{
+              padding: "14px 22px",
               border: "1px solid white",
               color: "white",
-              padding: "14px 22px",
               borderRadius: "6px",
               fontWeight: 600
             }}
@@ -65,7 +72,7 @@ export default function HomePage() {
 
       {/* ================= SOLUTIONS SECTION ================= */}
       <section id="solutions" style={{ marginBottom: "100px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "40px" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "32px" }}>
           Core Solutions
         </h2>
 
@@ -98,7 +105,7 @@ export default function HomePage() {
 
       {/* ================= INDUSTRIES SECTION ================= */}
       <section style={{ marginBottom: "100px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "30px" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>
           Industries We Serve
         </h2>
 
@@ -111,23 +118,24 @@ export default function HomePage() {
       </section>
 
       {/* ================= CONTACT SECTION ================= */}
-      <section id="contact" style={{ marginBottom: "120px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
+      <section id="contact" style={{ marginBottom: "80px" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>
           Contact NexAccess
         </h2>
 
-        <p style={{ fontSize: "18px", color: "#555", maxWidth: "700px" }}>
+        <p style={{ fontSize: "18px", color: "#555" }}>
           Let’s discuss deployment, partnerships, or pilot programs.
         </p>
 
         <p style={{ marginTop: "16px", fontSize: "16px" }}>
-          📧 Email: <strong>info@nexaccesssystems.com</strong><br />
+          📧 Email: <strong>info@nexaccesssystems.com</strong>
+          <br />
           📍 Nigeria
         </p>
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer style={{ textAlign: "center", color: "#777" }}>
+      <footer style={{ textAlign: "center", color: "#777", fontSize: "14px" }}>
         © 2026 NexAccess Global System
       </footer>
 
