@@ -7,16 +7,16 @@ export default function HomePage() {
   style={{
     background: "linear-gradient(135deg, #0B1F3A 0%, #1F4FD8 100%)",
     color: "white",
-    padding: "100px 60px",
-    borderRadius: "12px",
+    padding: "120px 40px",
+    borderRadius: "24px",
     marginBottom: "100px"
   }}
 >
-        <h1 style={{ fontSize: "42px", fontWeight: 700, color: "white" }}>
+        <h1 style={{ fontSize: "48px", fontWeight: 700, color: "white" }}>
   NexAccess Global System
 </h1>
 
-<p style={{ fontSize: "18px", color: "rgba(255,255,255,0.85)" }}>
+<p style={{ fontSize: "18px", color: "#E5E7EB", maxWidth: "640px" }}>
   Unified access control, payments, and smart infrastructure for banks,
   hospitals, malls, and enterprise campuses.
 </p>
@@ -157,8 +157,8 @@ export default function HomePage() {
         </h2>
         <p style={{
   background: "transparent",
-  color: "white",
-  border: "1px solid white",
+color: "white",
+border: "1px solid rgba(255,255,255,0.6)",
   padding: "14px 24px",
   borderRadius: "8px"
 }}>
