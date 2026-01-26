@@ -1,16 +1,9 @@
-import "./globals.css";
-
 export const metadata = {
-  title: "NexAccess Global System",
-  description:
-    "Enterprise access, payment and smart infrastructure systems built for Nigeria.",
+  title: "NexAccess",
+  description: "NexAccess Global System official website",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>{children}</body>
