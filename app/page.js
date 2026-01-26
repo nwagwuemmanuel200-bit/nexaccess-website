@@ -3,29 +3,53 @@ export default function HomePage() {
     <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "80px 20px" }}>
       
       {/* HERO SECTION */}
-      <section style={{ marginBottom: "80px" }}>
-        <h1 style={{ fontSize: "42px", fontWeight: "700", marginBottom: "16px" }}>
-          NexAccess Global System
-        </h1>
-        <p style={{ fontSize: "18px", color: "#555", maxWidth: "700px" }}>
-          Unified access control, payments, and smart infrastructure solutions
-          for banks, hospitals, malls, and enterprise facilities in Nigeria.
-        </p>
+      <section
+  style={{
+    background: "linear-gradient(135deg, #0B1F3A 0%, #1F4FD8 100%)",
+    color: "white",
+    padding: "100px 60px",
+    borderRadius: "12px",
+    marginBottom: "100px"
+  }}
+>
+        <h1 style={{ fontSize: "44px", fontWeight: 700, marginBottom: "16px" }}>
+  NexAccess Global System
+</h1>
+
+<p style={{ fontSize: "18px", maxWidth: "640px", opacity: 0.9 }}>
+  Unified access control, payments, and smart infrastructure for banks,
+  hospitals, malls, and enterprise campuses.
+</p>
 
         <div style={{ marginTop: "30px" }}>
           <a
-            href="#solutions"
-            style={{
-              padding: "12px 24px",
-              background: "#000",
-              color: "#fff",
-              borderRadius: "6px",
-              textDecoration: "none",
-              marginRight: "12px"
-            }}
-          >
-            Our Solutions
-          </a>
+  href="#solutions"
+  style={{
+    background: "white",
+    color: "#0B1F3A",
+    padding: "14px 22px",
+    borderRadius: "6px",
+    fontWeight: 600,
+    marginRight: "12px",
+    display: "inline-block"
+  }}
+>
+  View Solutions
+</a>
+
+<a
+  href="/investors"
+  style={{
+    border: "1px solid white",
+    color: "white",
+    padding: "14px 22px",
+    borderRadius: "6px",
+    fontWeight: 600,
+    display: "inline-block"
+  }}
+>
+  Investor Overview
+</a>
 
           <a
             href="#contact"
