@@ -12,21 +12,11 @@ export default function HomePage() {
     marginBottom: "100px"
   }}
 >
-        <h1 style={{
-  fontSize: "44px",
-  fontWeight: 700,
-  marginBottom: "16px",
-  color: "white"
-}}>
+        <h1 style={{ fontSize: "42px", fontWeight: 700, color: "white" }}>
   NexAccess Global System
 </h1>
 
-<p style={{
-  fontSize: "18px",
-  maxWidth: "640px",
-  opacity: 0.9,
-  color: "#E5E7EB"
-}}>
+<p style={{ fontSize: "18px", color: "rgba(255,255,255,0.85)" }}>
   Unified access control, payments, and smart infrastructure for banks,
   hospitals, malls, and enterprise campuses.
 </p>
@@ -156,14 +146,31 @@ export default function HomePage() {
 
       {/* CONTACT SECTION */}
       <section id="contact">
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>
+        <h2 style={{
+  background: "white",
+  color: "var(--primary)",
+  padding: "14px 24px",
+  borderRadius: "8px",
+  fontWeight: 600
+}}>
           Contact NexAccess
         </h2>
-        <p style={{ fontSize: "18px", color: "#555" }}>
+        <p style={{
+  background: "transparent",
+  color: "white",
+  border: "1px solid white",
+  padding: "14px 24px",
+  borderRadius: "8px"
+}}>
           Let’s discuss deployment, partnerships, or pilot programs.
         </p>
 
-        <p style={{ fontSize: "18px", color: "var(--text-muted)" }}>
+        <p style={{
+  background: "var(--accent)",
+  color: "white",
+  padding: "14px 24px",
+  borderRadius: "8px"
+}}>
           📧 Email: <strong>info@nexaccesssystems.com</strong><br />
           📍 Nigeria
         </p>
