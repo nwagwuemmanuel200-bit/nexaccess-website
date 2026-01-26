@@ -43,9 +43,26 @@ export default function RootLayout({ children }) {
     </Script>
   </head>
 
-  <body style={{ margin: 0, fontFamily: "system-ui" }}>
-    {children}
-  </body>
+  <body>
+  <header className="site-header">
+    <div className="logo">
+      <strong>NexAccess</strong>
+      <span>Global System</span>
+    </div>
+
+    <nav className="nav">
+      <a href="/">Home</a>
+      <a href="/investors">Investors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  {children}
+
+  <footer className="site-footer">
+    © {new Date().getFullYear()} NexAccess Global System
+  </footer>
+</body>
 </html>
   );
 }
