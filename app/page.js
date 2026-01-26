@@ -27,50 +27,47 @@ export default function HomePage() {
   gap: "16px",
   flexWrap: "wrap"
 }}>
-  {/* buttons stay the same */}
+
+  <div style={{
+    marginTop: "30px",
+    display: "flex",
+    gap: "16px"
+  }}>
+    <a>View Solutions</a>
+    <a>Investor Overview</a>
+    <a>Contact Us</a>
+  </div>
+
 </div>
-          <a
-  href="#solutions"
-  style={{
-    background: "white",
-    color: "#0B1F3A",
-    padding: "14px 22px",
-    borderRadius: "6px",
-    fontWeight: 600,
-    marginRight: "12px",
-    display: "inline-block"
-  }}
->
-  View Solutions
-</a>
+    View Solutions
+  </a>
 
-<a
-  href="/investors"
-  style={{
-    border: "1px solid white",
-    color: "white",
-    padding: "14px 22px",
-    borderRadius: "6px",
-    fontWeight: 600,
-    display: "inline-block"
-  }}
->
-  Investor Overview
-</a>
+  <a
+    href="/investors"
+    style={{
+      padding: "14px 22px",
+      border: "1px solid white",
+      color: "white",
+      borderRadius: "6px",
+      fontWeight: 600
+    }}
+  >
+    Investor Overview
+  </a>
 
-          <a
-            href="#contact"
-            style={{
-              padding: "12px 24px",
-              border: "1px solid #000",
-              borderRadius: "6px",
-              textDecoration: "none",
-              color: "#000"
-            }}
-          >
-            Contact Us
-          </a>
-        </div>
+  <a
+    href="#contact"
+    style={{
+      padding: "14px 22px",
+      border: "1px solid white",
+      color: "white",
+      borderRadius: "6px",
+      fontWeight: 600
+    }}
+  >
+    Contact Us
+  </a>
+</div>
       </section>
 
       {/* SOLUTIONS SECTION */}
