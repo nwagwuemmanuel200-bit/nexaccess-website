@@ -1,10 +1,17 @@
 :root {
-  --primary: #0B1F3A;
-  --secondary: #1F4FD8;
-  --accent: #1BA97F;
-  --text-dark: #111111;
-  --text-muted: #6B7280;
-  --bg-light: #F9FAFB;
+  /* Core Brand Colors */
+  --primary: #0B1F3A;     /* Deep navy – trust, banks */
+  --secondary: #1F4FD8;   /* Enterprise blue */
+  --accent: #1BA97F;      /* Fintech green */
+
+  /* Text */
+  --text-dark: #0F172A;
+  --text-muted: #64748B;
+
+  /* Backgrounds */
+  --bg-light: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --border-light: #E5E7EB;
 }
 
 body {
