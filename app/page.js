@@ -181,8 +181,9 @@ export default function HomePage() {
 }
 
 const cardStyle = {
-  border: "1px solid #e5e5e5",
-  borderRadius: "10px",
-  padding: "24px",
-  background: "#fafafa"
+  border: "1px solid #e5e7eb",
+  borderRadius: "14px",
+  padding: "28px",
+  background: "white",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.04)"
 };
