@@ -123,12 +123,35 @@ export default function HomePage() {
         <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>
           Industries We Serve
         </h2>
-        <ul style={{ fontSize: "18px", color: "#555" }}>
-          <li>Banks & Financial Institutions</li>
-          <li>Hospitals & Healthcare Facilities</li>
-          <li>Shopping Malls & Commercial Complexes</li>
-          <li>Government & Enterprise Campuses</li>
-        </ul>
+        <div style={{
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+  gap: "24px"
+}}>
+  <div style={cardStyle}>
+    🏦<br />
+    <strong>Banks</strong>
+    <p>Secure access, payments, and compliance-ready infrastructure.</p>
+  </div>
+
+  <div style={cardStyle}>
+    🏥<br />
+    <strong>Hospitals</strong>
+    <p>Controlled access, patient safety, and smart facility management.</p>
+  </div>
+
+  <div style={cardStyle}>
+    🏬<br />
+    <strong>Malls</strong>
+    <p>Visitor flow, parking access, and cashless experiences.</p>
+  </div>
+
+  <div style={cardStyle}>
+    🏢<br />
+    <strong>Enterprise</strong>
+    <p>Campus-wide identity, access, and payment systems.</p>
+  </div>
+</div>
       </section>
 
       {/* CONTACT SECTION */}
