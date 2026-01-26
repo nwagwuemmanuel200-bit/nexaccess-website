@@ -12,16 +12,33 @@ export default function HomePage() {
     marginBottom: "100px"
   }}
 >
-        <h1 style={{ fontSize: "44px", fontWeight: 700, marginBottom: "16px" }}>
+        <h1 style={{
+  fontSize: "44px",
+  fontWeight: 700,
+  marginBottom: "16px",
+  color: "white"
+}}>
   NexAccess Global System
 </h1>
 
-<p style={{ fontSize: "18px", maxWidth: "640px", opacity: 0.9 }}>
+<p style={{
+  fontSize: "18px",
+  maxWidth: "640px",
+  opacity: 0.9,
+  color: "#E5E7EB"
+}}>
   Unified access control, payments, and smart infrastructure for banks,
   hospitals, malls, and enterprise campuses.
 </p>
 
-        <div style={{ marginTop: "30px" }}>
+        <div style={{
+  marginTop: "32px",
+  display: "flex",
+  gap: "16px",
+  flexWrap: "wrap"
+}}>
+  {/* buttons stay the same */}
+</div>
           <a
   href="#solutions"
   style={{
