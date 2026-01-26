@@ -28,9 +28,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "system-ui, sans-serif" }}>
-        {children}
-      </body>
-    </html>
+  <head>
+    <Script
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+      strategy="afterInteractive"
+    />
+    <Script id="google-analytics" strategy="afterInteractive">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+      `}
+    </Script>
+  </head>
+
+  <body style={{ margin: 0, fontFamily: "system-ui" }}>
+    {children}
+  </body>
+</html>
   );
 }
