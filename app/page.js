@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "60px 20px" }}>
+    <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "80px 20px" }}>
       
       {/* HERO SECTION */}
       <section style={{ marginBottom: "80px" }}>
