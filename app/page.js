@@ -163,7 +163,7 @@ export default function HomePage() {
           Let’s discuss deployment, partnerships, or pilot programs.
         </p>
 
-        <p style={{ marginTop: "10px" }}>
+        <p style={{ fontSize: "18px", color: "var(--text-muted)" }}>
           📧 Email: <strong>info@nexaccesssystems.com</strong><br />
           📍 Nigeria
         </p>
