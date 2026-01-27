@@ -91,19 +91,10 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section
-  style={{
-    marginBottom: "64px",
-    paddingBottom: "32px",
-    borderBottom: "1px solid #E5E7EB"
-  }}
->
-        <h2>Partnerships</h2>
-        <p>
-          NexAccess works with OEM manufacturers, banks, and infrastructure
-          operators to deploy compliant solutions.
-        </p>
-      </section>
+      <section style={{ marginBottom: "64px" }}>
+  <h2>Partnerships</h2>
+  ...
+</section>
 
     </main>
   );
