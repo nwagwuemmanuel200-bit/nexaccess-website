@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "40px 20px" }}>
+    <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 40px 40px" }}>
 {/* HEADER */}
 <header
   style={{
