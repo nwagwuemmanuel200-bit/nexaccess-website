@@ -2,7 +2,7 @@ export default function InvestorsPage() {
   return (
     <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "60px 20px" }}>
 
-      <h1>Investor & Partner Overview</h1>
+      <h1>Investor Overview</h1>
 
       <section>
         <h2>Company Overview</h2>
