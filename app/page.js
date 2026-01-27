@@ -160,25 +160,27 @@ export default function HomePage() {
       ["Smart Parking & Campus", "Integrated parking, access, and monitoring for large campuses."]
     ].map(([title, desc]) => (
       style={{
-  border: "1px solid #e6eaf0",
-  borderRadius: "16px",
-  padding: "28px",
+  borderRadius: "18px",
+  padding: "32px",
   background: "white",
-  boxShadow: "0 10px 30px rgba(11,31,59,0.06)"
+  boxShadow: "0 12px 32px rgba(11,31,59,0.08)",
+  transition: "transform 0.2s ease, box-shadow 0.2s ease"
 }}
         <h3
   style={{
-    marginBottom: "10px",
-    color: BRAND.blueDark,
-    fontSize: "20px"
+    fontSize: "20px",
+    fontWeight: 700,
+    marginBottom: "12px",
+    color: BRAND.blueDark
   }}
 >
   {title}
 </h3>
         <p
   style={{
+    fontSize: "15px",
     color: "#5f6b7a",
-    lineHeight: "1.6"
+    lineHeight: "1.7"
   }}
 >
   {desc}
