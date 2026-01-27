@@ -5,14 +5,18 @@ export default function InvestorsPage() {
     maxWidth: "1000px",
     margin: "0 auto",
     padding: "80px 20px",
-    lineHeight: "1.7"
+    lineHeight: "1.7",
+    background: "#F7F9FC",
+    borderRadius: "24px"
   }}
 >
 
-      <h1>Investor Overview</h1>
+      <h1 style={{ fontSize: "42px", marginBottom: "24px" }}>
+  Investor Overview
+</h1>
 
       <section style={{ marginBottom: "64px" }}>
-        <h2>Company Overview</h2>
+        <h2 style={{ color: "#0B1F3B" }}>Company Overview</h2>
         <p>
           NexAccess Global System builds secure access control and payment
           infrastructure for banks, hospitals, malls, and enterprise facilities
