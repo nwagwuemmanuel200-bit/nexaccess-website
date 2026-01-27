@@ -141,6 +141,24 @@ export default function InvestorsPage() {
   >
     Contact Investor Relations
   </a>
+     <div style={{ marginTop: "20px" }}>
+  <a
+    href="/investor-deck.pdf"
+    target="_blank"
+    style={{
+      background: "transparent",
+      color: "white",
+      padding: "14px 28px",
+      borderRadius: "12px",
+      border: "1px solid white",
+      fontWeight: 600,
+      textDecoration: "none",
+      display: "inline-block"
+    }}
+  >
+    Download Investor Deck
+  </a>
+</div>
 </section>
 
     </main>
