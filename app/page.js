@@ -221,20 +221,50 @@ export default function HomePage() {
 </section>
 
       {/* ================= CONTACT SECTION ================= */}
-      <section id="contact" style={{ marginBottom: "80px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>
+      <section
+  id="contact"
+  style={{
+    background: "linear-gradient(135deg, #0B1F3B, #123B7A)",
+    padding: "100px 48px",
+    borderRadius: "28px",
+    color: "white",
+    marginBottom: "140px"
+  }}
+>
+        <h2
+  style={{
+    fontSize: "38px",
+    fontWeight: 700,
+    marginBottom: "20px"
+  }}
+>
+  Let’s Build the Future Together
+</h2>
           Contact NexAccess
         </h2>
 
         <p style={{ fontSize: "18px", color: "#555" }}>
-          Let’s discuss deployment, partnerships, or pilot programs.
-        </p>
+          <p
+  style={{
+    maxWidth: "720px",
+    fontSize: "18px",
+    lineHeight: "1.7",
+    opacity: 0.95,
+    marginBottom: "32px"
+  }}
+>
+  NexAccess partners with banks, healthcare institutions, governments,
+  and enterprises to deploy secure access control, payments, and smart
+  infrastructure solutions across emerging and global markets.
+</p>
 
-        <p style={{ marginTop: "16px", fontSize: "16px" }}>
-          📧 Email: <strong>info@nexaccesssystems.com</strong>
-          <br />
-          📍 Nigeria
-        </p>
+        <p style={{ fontSize: "18px", marginBottom: "8px" }}>
+  📧 <strong>Email:</strong> info@nexaccesssystems.com
+</p>
+
+<p style={{ fontSize: "16px", opacity: 0.9 }}>
+  📍 Nigeria
+</p>
       </section>
 
       {/* ================= FOOTER ================= */}
