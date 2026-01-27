@@ -21,10 +21,14 @@ export default function HomePage() {
   {/* Logo */}
   <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
     <img
-      src="/logo.PNG"
-      alt="NexAccess Global System"
-      style={{ height: "88px", width: "auto" }}
-    />
+  src="/logo.PNG"
+  alt="NexAccess Global System"
+  style={{
+    height: "88px",
+    width: "auto",
+    display: "block"
+  }}
+/>
   </div>
 
   {/* Navigation */}
