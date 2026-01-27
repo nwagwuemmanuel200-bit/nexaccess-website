@@ -21,25 +21,29 @@ export default function HomePage() {
   }}
 >
   {/* Logo */}
-  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-   <div style={{ display: "flex", flexDirection: "column" }}>
-
-  <span style={{
-    fontSize: "22px",
-    fontWeight: 700,
-    color: BRAND.blueDark
-  }}>
+  <div style={{ display: "flex", flexDirection: "column" }}>
+  <span
+    style={{
+      fontSize: "24px",
+      fontWeight: 800,
+      letterSpacing: "0.3px",
+      color: BRAND.blueDark
+    }}
+  >
     NexAccess
   </span>
-  <span style={{
-    fontSize: "12px",
-    letterSpacing: "2px",
-    color: "#6b7280"
-  }}>
+
+  <span
+    style={{
+      fontSize: "11px",
+      letterSpacing: "3px",
+      color: "#6b7280",
+      marginTop: "2px"
+    }}
+  >
     GLOBAL SYSTEM
   </span>
 </div>
-  </div>
 
   {/* Navigation */}
   <nav style={{ display: "flex", gap: "24px", fontWeight: 500 }}>
