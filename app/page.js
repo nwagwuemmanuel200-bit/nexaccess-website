@@ -23,14 +23,7 @@ export default function HomePage() {
   {/* Logo */}
   <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
    <div style={{ display: "flex", flexDirection: "column" }}>
-<img
-  src="/logo.PNG"
-  alt="NexAccess Logo"
-  style={{
-    height: "64px",
-    marginBottom: "6px"
-  }}
-/>
+
   <span style={{
     fontSize: "22px",
     fontWeight: 700,
