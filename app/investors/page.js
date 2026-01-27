@@ -1,10 +1,17 @@
 export default function InvestorsPage() {
   return (
-    <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "60px 20px" }}>
+    <main
+  style={{
+    maxWidth: "1000px",
+    margin: "0 auto",
+    padding: "80px 20px",
+    lineHeight: "1.7"
+  }}
+>
 
       <h1>Investor Overview</h1>
 
-      <section>
+      <section style={{ marginBottom: "64px" }}>
         <h2>Company Overview</h2>
         <p>
           NexAccess Global System builds secure access control and payment
@@ -13,7 +20,7 @@ export default function InvestorsPage() {
         </p>
       </section>
 
-      <section>
+      <section style={{ marginBottom: "64px" }}>
         <h2>Problem</h2>
         <ul>
           <li>Fragmented access and payment systems</li>
@@ -22,7 +29,7 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section>
+      <section style={{ marginBottom: "64px" }}>
         <h2>Solution</h2>
         <ul>
           <li>Unified access + payments platform</li>
@@ -31,7 +38,7 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section>
+      <section style={{ marginBottom: "64px" }}>
         <h2>Target Markets</h2>
         <ul>
           <li>Banks & financial institutions</li>
@@ -41,7 +48,7 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section>
+      <section style={{ marginBottom: "64px" }}>
         <h2>Business Model</h2>
         <ul>
           <li>Hardware deployment & leasing</li>
@@ -50,7 +57,7 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section>
+      <section style={{ marginBottom: "64px" }}>
         <h2>Partnerships</h2>
         <p>
           NexAccess works with OEM manufacturers, banks, and infrastructure
