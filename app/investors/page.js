@@ -15,7 +15,13 @@ export default function InvestorsPage() {
   Investor Overview
 </h1>
 
-      <section style={{ marginBottom: "64px" }}>
+      <section
+  style={{
+    marginBottom: "64px",
+    paddingBottom: "32px",
+    borderBottom: "1px solid #E5E7EB"
+  }}
+>
         <h2 style={{ color: "#0B1F3B" }}>Company Overview</h2>
         <p>
           NexAccess Global System builds secure access control and payment
@@ -24,7 +30,13 @@ export default function InvestorsPage() {
         </p>
       </section>
 
-      <section style={{ marginBottom: "64px" }}>
+      <section
+  style={{
+    marginBottom: "64px",
+    paddingBottom: "32px",
+    borderBottom: "1px solid #E5E7EB"
+  }}
+>
         <h2>Problem</h2>
         <ul>
           <li>Fragmented access and payment systems</li>
@@ -33,7 +45,13 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section style={{ marginBottom: "64px" }}>
+      <section
+  style={{
+    marginBottom: "64px",
+    paddingBottom: "32px",
+    borderBottom: "1px solid #E5E7EB"
+  }}
+>
         <h2>Solution</h2>
         <ul>
           <li>Unified access + payments platform</li>
@@ -42,7 +60,13 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section style={{ marginBottom: "64px" }}>
+      <section
+  style={{
+    marginBottom: "64px",
+    paddingBottom: "32px",
+    borderBottom: "1px solid #E5E7EB"
+  }}
+>
         <h2>Target Markets</h2>
         <ul>
           <li>Banks & financial institutions</li>
@@ -52,7 +76,13 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section style={{ marginBottom: "64px" }}>
+      <section
+  style={{
+    marginBottom: "64px",
+    paddingBottom: "32px",
+    borderBottom: "1px solid #E5E7EB"
+  }}
+>
         <h2>Business Model</h2>
         <ul>
           <li>Hardware deployment & leasing</li>
@@ -61,7 +91,13 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section style={{ marginBottom: "64px" }}>
+      <section
+  style={{
+    marginBottom: "64px",
+    paddingBottom: "32px",
+    borderBottom: "1px solid #E5E7EB"
+  }}
+>
         <h2>Partnerships</h2>
         <p>
           NexAccess works with OEM manufacturers, banks, and infrastructure
