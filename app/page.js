@@ -64,15 +64,19 @@ export default function HomePage() {
   }}
 >
       >
-        <h1 style={{
-  fontSize: "52px",
-  fontWeight: 700,
-  lineHeight: "1.2",
-  maxWidth: "800px",
-  marginBottom: "24px"
-  color: "white",
-}}>
-  Smart Access, Payments & Infrastructure
+        <h1
+  style={{
+    fontSize: "clamp(36px, 6vw, 52px)",
+    fontWeight: 700,
+    lineHeight: "1.2",
+    maxWidth: "820px",
+    marginBottom: "24px"
+  }}
+>
+  Smart Access, Payments &{" "}
+  <span style={{ color: BRAND.gold }}>
+    Infrastructure
+  </span>
 </h1>
 
 <p style={{
