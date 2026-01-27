@@ -127,7 +127,7 @@ export default function InvestorsPage() {
   <p style={{ maxWidth: "700px", margin: "0 auto 32px", opacity: 0.9 }}>
     NexAccess Global System is actively exploring strategic partnerships and growth capital to scale secure access control, payments, and smart infrastructure deployments across Africa and emerging markets.
   </p>
-<a
+     <a
   href="/investor-deck.pdf"
   target="_blank"
   style={{
