@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Investors | NexAccess Global System",
+ title: "Investor & Partner Overview | NexAccess Global System",
   description:
     "Investor and partner overview of NexAccess Global System — unified access control, payments, and smart infrastructure for banks, hospitals, malls, and enterprise campuses in Africa.",
 };
