@@ -4,6 +4,8 @@ const BRAND = {
   gold: "#C9A24D"
 };
 
+// force rebuild
+
 export default function HomePage() {
   return (
     <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 40px 40px" }}>
