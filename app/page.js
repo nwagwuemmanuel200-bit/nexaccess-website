@@ -86,24 +86,27 @@ export default function HomePage() {
       background: "white",
       color: "#0B1F3B",
       padding: "14px 28px",
-      borderRadius: "8px",
+      borderRadius: "12px",
       fontWeight: 600,
       textDecoration: "none"
     }}>
     View Solutions
   </a>
 
-  <a href="#investors"
-    style={{
-      border: "1px solid #C9A24D",
-      color: "white",
-      padding: "14px 28px",
-      borderRadius: "8px",
-      fontWeight: 600,
-      textDecoration: "none"
-    }}>
-    Investor Overview
-  </a>
+  <a
+  href="#solutions"
+  style={{
+    backgroundColor: BRAND.gold,
+    color: "#0B1F3B",
+    padding: "14px 24px",
+    borderRadius: "12px",
+    fontWeight: 700,
+    textDecoration: "none",
+    boxShadow: "0 8px 20px rgba(201,162,77,0.35)"
+  }}
+>
+  View Solutions
+</a>
 </div>
       </section>
 
