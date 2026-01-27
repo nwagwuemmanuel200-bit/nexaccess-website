@@ -96,6 +96,40 @@ export default function InvestorsPage() {
   <h2>Partnerships</h2>
   ...
 </section>
+  <section
+  style={{
+    marginTop: "80px",
+    padding: "48px",
+    background: "#0B1F3B",
+    borderRadius: "24px",
+    color: "white",
+    textAlign: "center"
+  }}
+>
+  <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
+    Partner or Invest with NexAccess
+  </h2>
+
+  <p style={{ maxWidth: "700px", margin: "0 auto 32px", opacity: 0.9 }}>
+    We are actively exploring strategic partnerships, pilot deployments,
+    and growth capital to scale secure access and payment infrastructure
+    across Africa.
+  </p>
+
+  <a
+    href="/contact"
+    style={{
+      background: "white",
+      color: "#0B1F3B",
+      padding: "14px 28px",
+      borderRadius: "12px",
+      fontWeight: 600,
+      textDecoration: "none"
+    }}
+  >
+    Contact the Team
+  </a>
+</section>
 
     </main>
   );
