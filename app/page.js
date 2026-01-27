@@ -1,6 +1,33 @@
 export default function HomePage() {
   return (
     <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "40px 20px" }}>
+{/* HEADER */}
+<header
+  style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "24px 32px",
+    marginBottom: "32px",
+    borderBottom: "1px solid #eee"
+  }}
+>
+  {/* Logo */}
+  <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+    <img
+      src="/logo.png"
+      alt="NexAccess Global System"
+      style={{ height: "48px", width: "auto" }}
+    />
+  </div>
+
+  {/* Navigation */}
+  <nav style={{ display: "flex", gap: "24px", fontWeight: 500 }}>
+    <a href="#solutions">Solutions</a>
+    <a href="/investors">Investors</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
       {/* ================= HERO SECTION ================= */}
       <section
