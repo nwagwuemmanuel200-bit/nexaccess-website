@@ -171,23 +171,48 @@ export default function HomePage() {
 </section>
 
       {/* ================= INDUSTRIES SECTION ================= */}
-      <section id="investors" style={{
-  background: "#F7F9FC",
-  padding: "80px 40px",
-  borderRadius: "24px",
-  marginBottom: "120px"
-}}>
-  <h2 style={{ fontSize: "36px", marginBottom: "16px" }}>
-    Investor Overview
-  </h2>
+      <section
+  id="investors"
+  style={{
+    background: "linear-gradient(180deg, #F7F9FC 0%, #FFFFFF 100%)",
+    padding: "100px 48px",
+    borderRadius: "28px",
+    marginBottom: "140px"
+  }}
+>
+  <h2
+  style={{
+    fontSize: "38px",
+    fontWeight: 700,
+    color: BRAND.blueDark,
+    marginBottom: "20px"
+  }}
+>
+  Investor Overview
+</h2>
 
-  <p style={{ maxWidth: "800px", marginBottom: "32px", color: "#444" }}>
+  <p
+  style={{
+    maxWidth: "820px",
+    marginBottom: "36px",
+    fontSize: "18px",
+    lineHeight: "1.7",
+    color: "#4b5563"
+  }}
+>
     NexAccess is positioned at the intersection of access control,
     financial technology, and smart infrastructure, targeting
     high-growth emerging markets.
   </p>
 
-  <ul style={{ maxWidth: "800px", color: "#444", lineHeight: "1.8" }}>
+  <ul
+  style={{
+    maxWidth: "820px",
+    color: "#374151",
+    lineHeight: "1.8",
+    paddingLeft: "20px"
+  }}
+>
     <li>Multi-sector platform: banking, healthcare, retail, enterprise</li>
     <li>Hardware + software + recurring service revenue</li>
     <li>Strategic partnerships with financial institutions</li>
