@@ -141,13 +141,30 @@ export default function HomePage() {
       ["License Plate Recognition (LPR)", "Automated vehicle access, parking, and traffic control systems."],
       ["Smart Parking & Campus", "Integrated parking, access, and monitoring for large campuses."]
     ].map(([title, desc]) => (
-      <div key={title} style={{
-        border: "1px solid #eee",
-        borderRadius: "12px",
-        padding: "24px"
-      }}>
-        <h3 style={{ marginBottom: "8px" }}>{title}</h3>
-        <p style={{ color: "#555" }}>{desc}</p>
+      style={{
+  border: "1px solid #e6eaf0",
+  borderRadius: "16px",
+  padding: "28px",
+  background: "white",
+  boxShadow: "0 10px 30px rgba(11,31,59,0.06)"
+}}
+        <h3
+  style={{
+    marginBottom: "10px",
+    color: BRAND.blueDark,
+    fontSize: "20px"
+  }}
+>
+  {title}
+</h3>
+        <p
+  style={{
+    color: "#5f6b7a",
+    lineHeight: "1.6"
+  }}
+>
+  {desc}
+</p>
       </div>
     ))}
   </div>
