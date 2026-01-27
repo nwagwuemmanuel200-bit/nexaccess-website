@@ -91,32 +91,49 @@ export default function HomePage() {
 </p>
 
 <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-  <a href="#solutions"
+  <a
+    href="#solutions"
     style={{
       background: "white",
-      color: "#0B1F3B",
+      color: BRAND.blueDark,
       padding: "14px 28px",
       borderRadius: "12px",
       fontWeight: 600,
-      textDecoration: "none"
-    }}>
+      textDecoration: "none",
+      boxShadow: "0 6px 20px rgba(0,0,0,0.12)"
+    }}
+  >
     View Solutions
   </a>
 
   <a
-  href="#solutions"
-  style={{
-    backgroundColor: BRAND.gold,
-    color: "#0B1F3B",
-    padding: "14px 24px",
-    borderRadius: "12px",
-    fontWeight: 700,
-    textDecoration: "none",
-    boxShadow: "0 8px 20px rgba(201,162,77,0.35)"
-  }}
->
-  View Solutions
-</a>
+    href="#investors"
+    style={{
+      border: `1.5px solid ${BRAND.gold}`,
+      color: "white",
+      padding: "14px 28px",
+      borderRadius: "12px",
+      fontWeight: 600,
+      textDecoration: "none"
+    }}
+  >
+    Investor Overview
+  </a>
+
+  <a
+    href="#contact"
+    style={{
+      border: "1px solid rgba(255,255,255,0.4)",
+      color: "white",
+      padding: "14px 28px",
+      borderRadius: "12px",
+      fontWeight: 500,
+      textDecoration: "none",
+      opacity: 0.9
+    }}
+  >
+    Contact Us
+  </a>
 </div>
       </section>
 
