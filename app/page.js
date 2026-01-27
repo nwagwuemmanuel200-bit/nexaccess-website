@@ -73,6 +73,7 @@ export default function HomePage() {
   lineHeight: "1.2",
   maxWidth: "800px",
   marginBottom: "24px"
+  color: "white",
 }}>
   Smart Access, Payments & Infrastructure
 </h1>
@@ -80,7 +81,7 @@ export default function HomePage() {
 <p style={{
   fontSize: "20px",
   maxWidth: "700px",
-  opacity: 0.95,
+  opacity: 0.9,
   marginBottom: "40px"
 }}>
   NexAccess delivers unified access control, payment systems, and
