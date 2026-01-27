@@ -84,13 +84,21 @@ export default function InvestorsPage() {
     borderBottom: "1px solid #E5E7EB"
   }}
 >
-        <h2>Business Model</h2>
-        <ul>
-          <li>Hardware deployment & leasing</li>
-          <li>Software & platform integration</li>
-          <li>Maintenance & support contracts</li>
-        </ul>
-      </section>
+        <section
+  style={{
+    marginBottom: "64px",
+    paddingBottom: "32px",
+    borderBottom: "1px solid #E5E7EB"
+  }}
+>
+  <h2>Investor Highlights</h2>
+  <ul>
+    <li>Multi-sector platform spanning banking, healthcare, and smart infrastructure</li>
+    <li>Hybrid revenue model: hardware, software, and recurring services</li>
+    <li>Strong alignment with regulated environments and compliance requirements</li>
+    <li>Designed for scalable deployment across Nigeria and Africa</li>
+  </ul>
+</section>
 
       <section style={{ marginBottom: "64px" }}>
   <h2>Partnerships</h2>
