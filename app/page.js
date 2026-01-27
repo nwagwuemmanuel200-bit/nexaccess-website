@@ -46,7 +46,7 @@ export default function HomePage() {
 </div>
 
   {/* Navigation */}
-  <nav style={{ display: "flex", gap: "24px", fontWeight: 500 }}>
+  <nav style={{ display: "flex", gap: "20px", fontWeight: 500 }}>
   <a href="#solutions">Solutions</a>
   <a href="#investors">Investors</a>
   <a href="#contact">Contact</a>
