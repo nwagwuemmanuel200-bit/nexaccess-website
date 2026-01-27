@@ -22,15 +22,22 @@ export default function HomePage() {
 >
   {/* Logo */}
   <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-    <img
-  src="/logo.PNG"
-  alt="NexAccess Global System"
-  style={{
-    height: "88px",
-    width: "auto",
-    display: "block"
-  }}
-/>
+   <div style={{ display: "flex", flexDirection: "column" }}>
+  <span style={{
+    fontSize: "22px",
+    fontWeight: 700,
+    color: BRAND.blueDark
+  }}>
+    NexAccess
+  </span>
+  <span style={{
+    fontSize: "12px",
+    letterSpacing: "2px",
+    color: "#6b7280"
+  }}>
+    GLOBAL SYSTEM
+  </span>
+</div>
   </div>
 
   {/* Navigation */}
