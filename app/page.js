@@ -1,3 +1,9 @@
+const BRAND = {
+  blueDark: "#0B1F3B",
+  blue: "#123B7A",
+  gold: "#C9A24D"
+};
+
 export default function HomePage() {
   return (
     <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 40px 40px" }}>
@@ -9,7 +15,7 @@ export default function HomePage() {
     justifyContent: "space-between",
     padding: "24px 32px",
     marginBottom: "32px",
-    borderBottom: "1px solid #eee"
+    borderBottom: `1px solid ${BRAND.gold}33`
   }}
 >
   {/* Logo */}
@@ -17,16 +23,16 @@ export default function HomePage() {
     <img
       src="/logo.png"
       alt="NexAccess Global System"
-      style={{ height: "48px", width: "auto" }}
+      style={{ height: "88px", width: "auto" }}
     />
   </div>
 
   {/* Navigation */}
   <nav style={{ display: "flex", gap: "24px", fontWeight: 500 }}>
-    <a href="#solutions">Solutions</a>
-    <a href="/investors">Investors</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <a style={{ color: BRAND.blueDark }} href="#solutions">Solutions</a>
+  <a style={{ color: BRAND.blueDark }} href="/investors">Investors</a>
+  <a style={{ color: BRAND.gold }} href="#contact">Contact</a>
+</nav>
 </header>
 
       {/* ================= HERO SECTION ================= */}
