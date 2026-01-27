@@ -121,13 +121,11 @@ export default function InvestorsPage() {
   }}
 >
   <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
-    Partner or Invest with NexAccess
+  Partner or Invest with NexAccess Global System
   </h2>
 
   <p style={{ maxWidth: "700px", margin: "0 auto 32px", opacity: 0.9 }}>
-    We are actively exploring strategic partnerships, pilot deployments,
-    and growth capital to scale secure access and payment infrastructure
-    across Africa.
+    NexAccess Global System is actively exploring strategic partnerships and growth capital to scale secure access control, payments, and smart infrastructure deployments across Africa and emerging markets.
   </p>
 
   <a
@@ -141,7 +139,7 @@ export default function InvestorsPage() {
       textDecoration: "none"
     }}
   >
-    Contact the Team
+    Contact Investor Relations
   </a>
 </section>
 
