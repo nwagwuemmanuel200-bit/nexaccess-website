@@ -35,126 +35,129 @@ export default function HomePage() {
 
   {/* Navigation */}
   <nav style={{ display: "flex", gap: "24px", fontWeight: 500 }}>
-  <a style={{ color: BRAND.blueDark }} href="#solutions">Solutions</a>
-  <a style={{ color: BRAND.blueDark }} href="/investors">Investors</a>
-  <a style={{ color: BRAND.gold }} href="#contact">Contact</a>
+  <a href="#solutions">Solutions</a>
+  <a href="#investors">Investors</a>
+  <a href="#contact">Contact</a>
 </nav>
 </header>
 
       {/* ================= HERO SECTION ================= */}
-      <section
-        style={{
-          background: "linear-gradient(135deg, #0B1F3A 0%, #1F4FD8 100%)",
-          color: "white",
-          padding: "100px 40px",
-          borderRadius: "24px",
-          marginBottom: "100px"
-        }}
+<section
+  style={{
+    background: "linear-gradient(135deg, #0B1F3B, #123B7A)",
+    color: "white",
+    padding: "100px 40px",
+    borderRadius: "24px",
+    marginBottom: "100px"
+  }}
+>
       >
-        <h1 style={{ fontSize: "48px", fontWeight: 700, marginBottom: "16px" }}>
-          NexAccess Global System
-        </h1>
+        <h1 style={{
+  fontSize: "52px",
+  fontWeight: 700,
+  lineHeight: "1.2",
+  maxWidth: "800px",
+  marginBottom: "24px"
+}}>
+  Smart Access, Payments & Infrastructure
+</h1>
 
-        <p style={{ fontSize: "18px", color: "#E5E7EB", maxWidth: "700px" }}>
-          Unified access control, payments, and smart infrastructure for banks,
-          hospitals, malls, and enterprise campuses.
-        </p>
+<p style={{
+  fontSize: "20px",
+  maxWidth: "700px",
+  opacity: 0.95,
+  marginBottom: "40px"
+}}>
+  NexAccess delivers unified access control, payment systems, and
+  smart infrastructure solutions for banks, hospitals, malls, and
+  enterprise campuses across emerging markets.
+</p>
 
-        <div
-          style={{
-            marginTop: "32px",
-            display: "flex",
-            gap: "16px",
-            flexWrap: "wrap"
-          }}
-        >
-          <a
-            href="#solutions"
-            style={{
-              padding: "14px 22px",
-              background: "white",
-              color: "#0B1F3A",
-              borderRadius: "6px",
-              fontWeight: 600
-            }}
-          >
-            View Solutions
-          </a>
+<div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+  <a href="#solutions"
+    style={{
+      background: "white",
+      color: "#0B1F3B",
+      padding: "14px 28px",
+      borderRadius: "8px",
+      fontWeight: 600,
+      textDecoration: "none"
+    }}>
+    View Solutions
+  </a>
 
-          <a
-            href="/investors"
-            style={{
-              padding: "14px 22px",
-              border: "1px solid white",
-              color: "white",
-              borderRadius: "6px",
-              fontWeight: 600
-            }}
-          >
-            Investor Overview
-          </a>
-
-          <a
-            href="#contact"
-            style={{
-              padding: "14px 22px",
-              border: "1px solid white",
-              color: "white",
-              borderRadius: "6px",
-              fontWeight: 600
-            }}
-          >
-            Contact Us
-          </a>
-        </div>
+  <a href="#investors"
+    style={{
+      border: "1px solid #C9A24D",
+      color: "white",
+      padding: "14px 28px",
+      borderRadius: "8px",
+      fontWeight: 600,
+      textDecoration: "none"
+    }}>
+    Investor Overview
+  </a>
+</div>
       </section>
 
       {/* ================= SOLUTIONS SECTION ================= */}
-      <section id="solutions" style={{ marginBottom: "100px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "32px" }}>
-          Core Solutions
-        </h2>
+      <section id="solutions" style={{ marginBottom: "120px" }}>
+  <h2 style={{ fontSize: "36px", marginBottom: "16px" }}>
+    Our Solutions
+  </h2>
 
-        <div style={{ display: "grid", gap: "30px" }}>
-          <div style={cardStyle}>
-            <h3>Access Control Systems</h3>
-            <p>
-              Smart gates, LPR systems, biometric access, and centralized
-              monitoring for secure facilities.
-            </p>
-          </div>
+  <p style={{ maxWidth: "700px", marginBottom: "40px", color: "#555" }}>
+    Modular, scalable systems designed for financial institutions,
+    healthcare, retail, and large enterprises.
+  </p>
 
-          <div style={cardStyle}>
-            <h3>Contactless Payments</h3>
-            <p>
-              EMV-compliant POS, NFC tap-to-pay, and enterprise payment
-              integrations for regulated environments.
-            </p>
-          </div>
-
-          <div style={cardStyle}>
-            <h3>Smart Parking & Mobility</h3>
-            <p>
-              Automated parking access, payment reconciliation, and traffic
-              analytics for large facilities.
-            </p>
-          </div>
-        </div>
-      </section>
+  <div style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+    gap: "24px"
+  }}>
+    {[
+      ["Access Control Systems", "Biometric, RFID, and smart gate solutions for secure facilities."],
+      ["Smart Payments & POS", "Certified payment terminals and contactless payment infrastructure."],
+      ["License Plate Recognition (LPR)", "Automated vehicle access, parking, and traffic control systems."],
+      ["Smart Parking & Campus", "Integrated parking, access, and monitoring for large campuses."]
+    ].map(([title, desc]) => (
+      <div key={title} style={{
+        border: "1px solid #eee",
+        borderRadius: "12px",
+        padding: "24px"
+      }}>
+        <h3 style={{ marginBottom: "8px" }}>{title}</h3>
+        <p style={{ color: "#555" }}>{desc}</p>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* ================= INDUSTRIES SECTION ================= */}
-      <section style={{ marginBottom: "100px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>
-          Industries We Serve
-        </h2>
+      <section id="investors" style={{
+  background: "#F7F9FC",
+  padding: "80px 40px",
+  borderRadius: "24px",
+  marginBottom: "120px"
+}}>
+  <h2 style={{ fontSize: "36px", marginBottom: "16px" }}>
+    Investor Overview
+  </h2>
 
-        <ul style={{ fontSize: "18px", color: "#555", lineHeight: "1.8" }}>
-          <li>Banks & Financial Institutions</li>
-          <li>Hospitals & Healthcare Facilities</li>
-          <li>Shopping Malls & Commercial Complexes</li>
-          <li>Government & Enterprise Campuses</li>
-        </ul>
-      </section>
+  <p style={{ maxWidth: "800px", marginBottom: "32px", color: "#444" }}>
+    NexAccess is positioned at the intersection of access control,
+    financial technology, and smart infrastructure, targeting
+    high-growth emerging markets.
+  </p>
+
+  <ul style={{ maxWidth: "800px", color: "#444", lineHeight: "1.8" }}>
+    <li>Multi-sector platform: banking, healthcare, retail, enterprise</li>
+    <li>Hardware + software + recurring service revenue</li>
+    <li>Strategic partnerships with financial institutions</li>
+    <li>Scalable deployments across Africa and global markets</li>
+  </ul>
+</section>
 
       {/* ================= CONTACT SECTION ================= */}
       <section id="contact" style={{ marginBottom: "80px" }}>
