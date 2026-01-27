@@ -1,15 +1,16 @@
+// updated investors page
 export default function InvestorsPage() {
   return (
     <main
-  style={{
-    maxWidth: "1000px",
-    margin: "0 auto",
-    padding: "80px 20px",
-    lineHeight: "1.7",
-    background: "#F7F9FC",
-    borderRadius: "24px"
-  }}
->
+      style={{
+        maxWidth: "1000px",
+        margin: "0 auto",
+        padding: "80px 20px",
+        lineHeight: "1.7",
+        background: "#F7F9FC",
+        borderRadius: "24px"
+      }}
+    >
 
       <h1 style={{ fontSize: "42px", marginBottom: "24px" }}>
   Investor Overview
