@@ -130,9 +130,8 @@ export default function InvestorsPage() {
      <a
   href="/investor-deck.pdf"
   target="_blank"
+  rel="noopener noreferrer"
   style={{
-    display: "inline-block",
-    marginTop: "16px",
     background: "white",
     color: "#0B1F3B",
     padding: "14px 28px",
