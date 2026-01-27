@@ -229,15 +229,30 @@ export default function HomePage() {
   style={{
     maxWidth: "820px",
     color: "#374151",
-    lineHeight: "1.8",
+    lineHeight: "1.9",
     paddingLeft: "20px"
   }}
 >
-    <li>Multi-sector platform: banking, healthcare, retail, enterprise</li>
-    <li>Hardware + software + recurring service revenue</li>
-    <li>Strategic partnerships with financial institutions</li>
-    <li>Scalable deployments across Africa and global markets</li>
-  </ul>
+  <li>
+    <strong>Multi-sector platform:</strong> Banking, healthcare, retail,
+    and enterprise infrastructure deployments.
+  </li>
+
+  <li>
+    <strong>Integrated revenue model:</strong> Hardware supply, software
+    licensing, managed services, and recurring support.
+  </li>
+
+  <li>
+    <strong>Strategic partnerships:</strong> Collaboration with banks,
+    payment networks, and institutional operators.
+  </li>
+
+  <li>
+    <strong>Scalable growth:</strong> Designed for expansion across Nigeria,
+    Africa, and global emerging markets.
+  </li>
+</ul>
 </section>
 
       {/* ================= CONTACT SECTION ================= */}
