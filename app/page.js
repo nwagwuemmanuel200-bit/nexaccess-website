@@ -15,7 +15,7 @@ export default function HomePage() {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: "24px 32px",
+    padding: "20px 24px",
     marginBottom: "32px",
     borderBottom: `1px solid ${BRAND.gold}33`
   }}
