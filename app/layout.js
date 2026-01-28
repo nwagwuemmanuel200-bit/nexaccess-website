@@ -1,5 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
+import Link from "next/link";
 
 export const metadata = {
   title: {
@@ -51,9 +52,9 @@ export default function RootLayout({ children }) {
     </div>
 
     <nav className="nav">
-      <a href="/">Home</a>
-      <a href="/investors">Investors</a>
-      <a href="#contact">Contact</a>
+      <Link href="/">Home</Link>
+<Link href="/investors">Investors</Link>
+<Link href="/contact">Contact</Link>
     </nav>
   </header>
 
