@@ -1,159 +1,119 @@
 export const metadata = {
-  title: "NexAccess | Unified Access & Payments",
+  title: "NexAccess Global System",
+  description:
+    "Unified access control and payments infrastructure for banks, hospitals, enterprises, and governments across Africa.",
 };
 
 export default function HomePage() {
   return (
-    <main>
+    <main style={{ fontFamily: "system-ui, sans-serif" }}>
+      {/* NAV */}
+      <header style={nav}>
+        <strong>NexAccess<br /><span style={{ fontSize: 12 }}>GLOBAL SYSTEM</span></strong>
+        <nav style={navLinks}>
+          <a href="/">Home</a>
+          <a href="/investors">Investors</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </header>
+
       {/* HERO */}
-      <section
-        style={{
-          background:
-            "linear-gradient(135deg, #0b1f3b 0%, #123b7a 100%)",
-          color: "white",
-          padding: "120px 0",
-        }}
-      >
-        <div className="container fade-in">
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr",
-              gap: "48px",
-            }}
-          >
-            <div>
-              <h1
-                style={{
-                  fontSize: "clamp(36px, 6vw, 56px)",
-                  fontWeight: 800,
-                  marginBottom: "24px",
-                }}
-              >
-                Unified Access Control & Payments Infrastructure
-              </h1>
+      <section style={hero}>
+        <div style={heroContent}>
+          <h1 style={heroTitle}>
+            Unified Access Control & Payments Infrastructure
+          </h1>
+          <p style={heroText}>
+            Secure, compliant access and payment platforms for banks,
+            hospitals, enterprises, and governments across Africa.
+          </p>
 
-              <p
-                style={{
-                  maxWidth: "520px",
-                  fontSize: "18px",
-                  opacity: 0.95,
-                }}
-              >
-                Secure, compliant access and payment platforms for
-                banks, hospitals, enterprises, and governments
-                across Africa.
-              </p>
-
-              <div
-                style={{
-                  marginTop: "32px",
-                  display: "flex",
-                  gap: "16px",
-                  flexWrap: "wrap",
-                }}
-              >
-                <a
-                  href="/investors"
-                  style={{
-                    background: "white",
-                    color: "#0b1f3b",
-                    padding: "14px 28px",
-                    borderRadius: "10px",
-                    fontWeight: 600,
-                  }}
-                >
-                  Investor Overview
-                </a>
-
-                <a
-                  href="/contact"
-                  style={{
-                    border: "2px solid white",
-                    padding: "14px 28px",
-                    borderRadius: "10px",
-                    fontWeight: 600,
-                  }}
-                >
-                  Contact Us
-                </a>
-              </div>
-            </div>
-
-            <img
-              src="/images/hero.svg"
-              alt="NexAccess Platform Diagram"
-              style={{
-                width: "100%",
-                maxWidth: "560px",
-                margin: "0 auto",
-                display: "block",
-              }}
-            />
+          <div style={buttons}>
+            <a href="/investors" style={primaryBtn}>Investor Overview</a>
+            <a href="/contact" style={secondaryBtn}>Contact Us</a>
           </div>
         </div>
+
+        <img
+          src="/images/hero.svg"
+          alt="NexAccess platform"
+          style={heroImage}
+        />
       </section>
 
       {/* SOLUTION */}
-      <section className="section-muted">
-  <div className="container fade-in">
-    <h2 style={{ fontSize: "36px", marginBottom: "32px" }}>
-      Our Solution
-    </h2>
+      <section style={section}>
+        <h2>Our Solution</h2>
+        <ul>
+          <li>Unified access + payments platform</li>
+          <li>Bank-grade compliance architecture</li>
+          <li>Hardware & software integration</li>
+          <li>Cloud-ready with regulatory controls</li>
+        </ul>
+      </section>
 
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-        gap: "24px",
-      }}
-    >
-      <div className="card">
-        <h3>Unified Platform</h3>
-        <p>
-          Single infrastructure for access control and payments
-          across regulated environments.
-        </p>
-      </div>
-
-      <div className="card">
-        <h3>Bank-Grade Compliance</h3>
-        <p>
-          Designed with security, auditability, and regulatory
-          alignment from day one.
-        </p>
-      </div>
-
-      <div className="card">
-        <h3>Hardware + Software</h3>
-        <p>
-          OEM-certified hardware integrated with enterprise
-          software and APIs.
-        </p>
-      </div>
-
-      <div className="card">
-        <h3>Africa-First Scale</h3>
-        <p>
-          Built for African markets with pan-African expansion
-          capability.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-      {/* FOOTER */}
-      <footer
-        style={{
-          background: "#0b1f3b",
-          color: "white",
-          textAlign: "center",
-          padding: "32px",
-        }}
-      >
+      <footer style={footer}>
         © 2026 NexAccess Global System
       </footer>
     </main>
   );
 }
+
+/* STYLES */
+const nav = {
+  display: "flex",
+  justifyContent: "space-between",
+  padding: "20px 40px",
+  borderBottom: "1px solid #eee",
+};
+
+const navLinks = { display: "flex", gap: 20 };
+
+const hero = {
+  display: "flex",
+  flexWrap: "wrap",
+  gap: 40,
+  padding: "80px 40px",
+  background: "linear-gradient(135deg, #081b33, #0b3a6e)",
+  color: "white",
+};
+
+const heroContent = { maxWidth: 520 };
+
+const heroTitle = { fontSize: 42, lineHeight: 1.2 };
+const heroText = { opacity: 0.9, marginTop: 20 };
+
+const buttons = { display: "flex", gap: 16, marginTop: 30 };
+
+const primaryBtn = {
+  background: "white",
+  color: "#081b33",
+  padding: "14px 24px",
+  borderRadius: 10,
+  fontWeight: 600,
+};
+
+const secondaryBtn = {
+  border: "2px solid white",
+  padding: "14px 24px",
+  borderRadius: 10,
+  color: "white",
+};
+
+const heroImage = {
+  maxWidth: 420,
+  width: "100%",
+  animation: "float 6s ease-in-out infinite",
+};
+
+const section = {
+  padding: "80px 40px",
+  maxWidth: 900,
+  margin: "0 auto",
+};
+
+const footer = {
+  padding: 40,
+  textAlign: "center",
+  opacity: 0.6,
+};
