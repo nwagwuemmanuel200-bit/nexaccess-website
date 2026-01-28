@@ -4,49 +4,56 @@ export const metadata = {
 
 export default function InvestorsPage() {
   return (
-    <main className="fade-in">
-      <section style={{ padding: "120px 0" }}>
-        <div className="container">
-          <h1 style={{ fontSize: "48px", marginBottom: "24px" }}>
-            Investor Overview
-          </h1>
+    <main style={page}>
+      <h1>Investor Overview</h1>
+      <p style={lead}>
+        NexAccess Global System is building secure, compliant access control
+        and payment infrastructure for regulated environments across Africa.
+      </p>
 
-          <p style={{ maxWidth: "640px", fontSize: "18px" }}>
-            NexAccess Global System is building secure, compliant
-            access control and payment infrastructure for regulated
-            environments across Africa.
-          </p>
+      <a href="/investor-deck.pdf" target="_blank" style={primaryBtn}>
+        Download Investor Deck
+      </a>
 
-          <div style={{ marginTop: "40px" }}>
-            <a
-              href="/investor-deck.pdf"
-              target="_blank"
-              style={{
-                background: "#0b1f3b",
-                color: "white",
-                padding: "14px 28px",
-                borderRadius: "10px",
-                fontWeight: 600,
-              }}
-            >
-              Download Investor Deck
-            </a>
-          </div>
+      <section style={cardSection}>
+        <div style={card}>
+          <h3>Enterprise Focus</h3>
+          <p>Banks, hospitals, governments & campuses</p>
+        </div>
+        <div style={card}>
+          <h3>OEM Partnerships</h3>
+          <p>Certified hardware manufacturers</p>
+        </div>
+        <div style={card}>
+          <h3>Africa-First Strategy</h3>
+          <p>Nigeria entry → Pan-African expansion</p>
         </div>
       </section>
-    <section className="section-muted">
-  <div className="container">
-    <h2 style={{ fontSize: "36px", marginBottom: "24px" }}>
-      The Problem
-    </h2>
-
-    <ul style={{ fontSize: "18px", lineHeight: "1.8" }}>
-      <li>Fragmented access control and payment systems</li>
-      <li>Security and compliance gaps in regulated environments</li>
-      <li>High operational costs and manual oversight</li>
-    </ul>
-  </div>
-</section>
     </main>
   );
 }
+
+const page = { padding: "80px 40px", maxWidth: 900, margin: "auto" };
+const lead = { fontSize: 18, opacity: 0.8 };
+
+const primaryBtn = {
+  display: "inline-block",
+  marginTop: 30,
+  background: "#081b33",
+  color: "white",
+  padding: "14px 28px",
+  borderRadius: 10,
+};
+
+const cardSection = {
+  display: "grid",
+  gap: 24,
+  marginTop: 60,
+};
+
+const card = {
+  background: "#fff",
+  padding: 30,
+  borderRadius: 16,
+  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+};
