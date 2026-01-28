@@ -34,6 +34,19 @@ export default function InvestorsPage() {
           </div>
         </div>
       </section>
+    <section className="section-muted">
+  <div className="container">
+    <h2 style={{ fontSize: "36px", marginBottom: "24px" }}>
+      The Problem
+    </h2>
+
+    <ul style={{ fontSize: "18px", lineHeight: "1.8" }}>
+      <li>Fragmented access control and payment systems</li>
+      <li>Security and compliance gaps in regulated environments</li>
+      <li>High operational costs and manual oversight</li>
+    </ul>
+  </div>
+</section>
     </main>
   );
 }
