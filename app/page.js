@@ -14,69 +14,81 @@ export default function HomePage() {
       }}
     >
       {/* HERO SECTION */}
-      <section
-        style={{
-          background:
-            "linear-gradient(135deg, #0B1F3B 0%, #123B7A 100%)",
-          color: "white",
-          padding: "120px 24px",
-        }}
-      >
-        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <h1
-            style={{
-              fontSize: "52px",
-              fontWeight: 800,
-              marginBottom: "24px",
-            }}
-          >
-            Unified Access Control & Payments Infrastructure
-          </h1>
+<section
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "120px 24px",
+    background: "linear-gradient(135deg, #0B1F3B 0%, #123B7A 100%)",
+    color: "white",
+  }}
+>
+  <img
+    src="/images/hero.svg"
+    alt="NexAccess Infrastructure"
+    style={{
+      maxWidth: "520px",
+      width: "100%",
+      marginBottom: "40px",
+    }}
+  />
 
-          <p
-            style={{
-              fontSize: "20px",
-              maxWidth: "720px",
-              opacity: 0.95,
-              marginBottom: "48px",
-            }}
-          >
-            NexAccess Global System builds secure, compliant access and
-            payment platforms for banks, hospitals, commercial estates,
-            and government facilities across Africa.
-          </p>
+  <h1
+    style={{
+      fontSize: "48px",
+      fontWeight: 800,
+      marginBottom: "24px",
+      lineHeight: "1.2",
+    }}
+  >
+    Unified Access Control<br />& Payments Infrastructure
+  </h1>
 
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            <a
-              href="/investors"
-              style={{
-                background: "white",
-                color: "#0B1F3B",
-                padding: "16px 32px",
-                borderRadius: "12px",
-                fontWeight: 600,
-                textDecoration: "none",
-              }}
-            >
-              Investor Overview
-            </a>
+  <p
+    style={{
+      maxWidth: "720px",
+      fontSize: "18px",
+      opacity: 0.9,
+      marginBottom: "40px",
+    }}
+  >
+    NexAccess Global System builds secure, compliant access and payment
+    platforms for banks, hospitals, commercial estates, and government
+    facilities across Africa.
+  </p>
 
-            <a
-              href="/contact"
-              style={{
-                border: "2px solid white",
-                color: "white",
-                padding: "16px 32px",
-                borderRadius: "12px",
-                fontWeight: 600,
-                textDecoration: "none",
-              }}
-            >
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </section>
+  <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+    <a
+      href="/investors"
+      style={{
+        background: "white",
+        color: "#0B1F3B",
+        padding: "14px 28px",
+        borderRadius: "10px",
+        fontWeight: 600,
+        textDecoration: "none",
+      }}
+    >
+      Investor Overview
+    </a>
+
+    <a
+      href="/contact"
+      style={{
+        border: "1px solid white",
+        color: "white",
+        padding: "14px 28px",
+        borderRadius: "10px",
+        fontWeight: 600,
+        textDecoration: "none",
+      }}
+    >
+      Contact Us
+    </a>
+  </div>
+</section>
 
       {/* CONTENT */}
       <section style={{ padding: "96px 24px" }}>
