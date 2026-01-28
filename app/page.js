@@ -95,19 +95,53 @@ export default function HomePage() {
       </section>
 
       {/* SOLUTION */}
-      <section style={{ padding: "96px 0" }}>
-        <div className="container">
-          <h2 style={{ fontSize: "32px", marginBottom: "24px" }}>
-            Our Solution
-          </h2>
-          <ul style={{ fontSize: "18px", lineHeight: 1.8 }}>
-            <li>Unified access + payments platform</li>
-            <li>Bank-grade compliance architecture</li>
-            <li>Hardware & software integration</li>
-            <li>Cloud-ready with regulatory controls</li>
-          </ul>
-        </div>
-      </section>
+      <section className="section-muted">
+  <div className="container fade-in">
+    <h2 style={{ fontSize: "36px", marginBottom: "32px" }}>
+      Our Solution
+    </h2>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+        gap: "24px",
+      }}
+    >
+      <div className="card">
+        <h3>Unified Platform</h3>
+        <p>
+          Single infrastructure for access control and payments
+          across regulated environments.
+        </p>
+      </div>
+
+      <div className="card">
+        <h3>Bank-Grade Compliance</h3>
+        <p>
+          Designed with security, auditability, and regulatory
+          alignment from day one.
+        </p>
+      </div>
+
+      <div className="card">
+        <h3>Hardware + Software</h3>
+        <p>
+          OEM-certified hardware integrated with enterprise
+          software and APIs.
+        </p>
+      </div>
+
+      <div className="card">
+        <h3>Africa-First Scale</h3>
+        <p>
+          Built for African markets with pan-African expansion
+          capability.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer
