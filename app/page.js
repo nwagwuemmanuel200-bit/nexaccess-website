@@ -16,25 +16,31 @@ export default function HomePage() {
       {/* HERO SECTION */}
 <section
   style={{
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    textAlign: "center",
-    padding: "120px 24px",
+    position: "relative",
+    padding: "140px 24px 120px",
     background: "linear-gradient(135deg, #0B1F3B 0%, #123B7A 100%)",
     color: "white",
+    overflow: "hidden",
   }}
 >
   <img
-    src="/images/hero.svg"
-    alt="NexAccess Infrastructure"
-    style={{
-      maxWidth: "520px",
-      width: "100%",
-      marginBottom: "40px",
-    }}
-  />
-
+  src="/images/hero.svg"
+  alt="NexAccess Infrastructure"
+  style={{
+    maxWidth: "520px",
+    width: "100%",
+    margin: "0 auto 60px",
+    opacity: 0.9,
+  }}
+/>
+<div
+  style={{
+    position: "relative",
+    zIndex: 2,
+    maxWidth: "1100px",
+    margin: "0 auto",
+  }}
+>
   <h1
     style={{
       fontSize: "48px",
