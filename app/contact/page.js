@@ -4,31 +4,21 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="fade-in">
-      <section style={{ padding: "120px 0" }}>
-        <div className="container">
-          <h1 style={{ fontSize: "48px", marginBottom: "24px" }}>
-            Contact NexAccess
-          </h1>
+    <main style={page}>
+      <h1>Contact NexAccess</h1>
+      <p style={lead}>
+        We engage with banks, enterprises, governments, and strategic partners
+        across Africa.
+      </p>
 
-          <p style={{ maxWidth: "640px", fontSize: "18px" }}>
-            We engage with banks, enterprises, governments, and
-            strategic partners across Africa.
-          </p>
-
-          <ul
-            style={{
-              marginTop: "32px",
-              fontSize: "18px",
-              lineHeight: 1.8,
-            }}
-          >
-            <li>Email: info@nexaccessglobal.com</li>
-            <li>Region: Nigeria & Africa</li>
-            <li>Focus: Banks, hospitals, government</li>
-          </ul>
-        </div>
-      </section>
+      <ul style={{ marginTop: 30 }}>
+        <li>Email: info@nexaccessglobal.com</li>
+        <li>Region: Nigeria & Africa</li>
+        <li>Focus: Banks, hospitals, government</li>
+      </ul>
     </main>
   );
 }
+
+const page = { padding: "80px 40px", maxWidth: 900, margin: "auto" };
+const lead = { fontSize: 18, opacity: 0.8 };
