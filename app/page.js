@@ -1,7 +1,7 @@
 export const metadata = {
   title: "NexAccess Global System | Unified Access & Payments",
   description:
-    "NexAccess Global System builds secure, compliant access control and payment infrastructure for Africa.",
+    "Secure, compliant access control and payment infrastructure for banks, hospitals, enterprises, and governments across Africa.",
 };
 
 export default function HomePage() {
@@ -10,33 +10,29 @@ export default function HomePage() {
       {/* ================= HEADER ================= */}
       <header
         style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 50,
           background: "white",
-          borderBottom: "1px solid #E6EAF0",
-          padding: "16px 24px",
+          borderBottom: "1px solid #E5E7EB",
         }}
       >
         <div
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
+            padding: "16px 20px",
             display: "flex",
-            justifyContent: "space-between",
             alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
-          <div style={{ fontWeight: 800, fontSize: "18px" }}>
-            NexAccess
-            <div style={{ fontSize: "12px", opacity: 0.7 }}>
-              GLOBAL SYSTEM
-            </div>
-          </div>
+          <strong style={{ fontSize: "18px" }}>NexAccess Global System</strong>
 
-          <nav style={{ display: "flex", gap: "20px", fontSize: "14px" }}>
-            <a href="/" style={{ color: "#123B7A", fontWeight: 600 }}>
-              Home
-            </a>
-            <a href="/investors">Investors</a>
-            <a href="/contact">Contact</a>
+          <nav style={{ display: "flex", gap: "20px", fontSize: "15px" }}>
+            <a href="/" style={navLink(true)}>Home</a>
+            <a href="/investors" style={navLink(false)}>Investors</a>
+            <a href="/contact" style={navLink(false)}>Contact</a>
           </nav>
         </div>
       </header>
@@ -44,19 +40,19 @@ export default function HomePage() {
       {/* ================= HERO ================= */}
       <section
         style={{
-          background: "linear-gradient(135deg, #0B1F3B, #123B7A)",
+          background:
+            "linear-gradient(135deg, #0B1F3B 0%, #123B7A 100%)",
           color: "white",
-          padding: "120px 24px",
+          padding: "80px 20px",
         }}
       >
         <div
-          className="hero-grid"
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
             display: "grid",
             gridTemplateColumns: "1fr",
-            gap: "56px",
+            gap: "48px",
             alignItems: "center",
           }}
         >
@@ -64,9 +60,9 @@ export default function HomePage() {
           <div>
             <h1
               style={{
-                fontSize: "48px",
-                lineHeight: "1.2",
-                marginBottom: "24px",
+                fontSize: "clamp(36px, 6vw, 56px)",
+                lineHeight: "1.15",
+                marginBottom: "20px",
               }}
             >
               Unified Access Control & Payments Infrastructure
@@ -75,42 +71,21 @@ export default function HomePage() {
             <p
               style={{
                 fontSize: "18px",
-                opacity: 0.9,
                 maxWidth: "520px",
+                opacity: 0.9,
                 marginBottom: "32px",
               }}
             >
               NexAccess Global System builds secure, compliant access and payment
-              platforms for banks, hospitals, enterprises, and governments across
-              Africa.
+              platforms for banks, hospitals, enterprises, and governments
+              across Africa.
             </p>
 
             <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-              <a
-                href="/investors"
-                style={{
-                  background: "white",
-                  color: "#0B1F3B",
-                  padding: "14px 24px",
-                  borderRadius: "10px",
-                  fontWeight: 600,
-                  textDecoration: "none",
-                }}
-              >
+              <a href="/investors" style={primaryBtn}>
                 Investor Overview
               </a>
-
-              <a
-                href="/contact"
-                style={{
-                  border: "1px solid white",
-                  color: "white",
-                  padding: "14px 24px",
-                  borderRadius: "10px",
-                  fontWeight: 600,
-                  textDecoration: "none",
-                }}
-              >
+              <a href="/contact" style={secondaryBtn}>
                 Contact Us
               </a>
             </div>
@@ -120,24 +95,23 @@ export default function HomePage() {
           <div style={{ textAlign: "center" }}>
             <img
               src="/images/hero.svg"
-              alt="NexAccess Infrastructure Illustration"
+              alt="NexAccess infrastructure illustration"
               style={{
                 width: "100%",
                 maxWidth: "520px",
+                margin: "0 auto",
+                display: "block",
               }}
             />
           </div>
         </div>
       </section>
 
-      {/* ================= CONTENT ================= */}
-      <section style={{ padding: "96px 24px" }}>
+      {/* ================= SOLUTION ================= */}
+      <section style={{ padding: "80px 20px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", marginBottom: "16px" }}>
-            Our Solution
-          </h2>
-
-          <ul style={{ fontSize: "16px", lineHeight: "1.8" }}>
+          <h2 style={sectionTitle}>Our Solution</h2>
+          <ul style={listStyle}>
             <li>Unified access + payments platform</li>
             <li>Bank-grade compliance architecture</li>
             <li>Hardware & software integration model</li>
@@ -146,27 +120,69 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ================= TARGET MARKETS ================= */}
+      <section style={{ background: "white", padding: "80px 20px" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 style={sectionTitle}>Target Markets</h2>
+          <ul style={listStyle}>
+            <li>Banks & financial institutions</li>
+            <li>Hospitals & healthcare networks</li>
+            <li>Commercial real estate & malls</li>
+            <li>Government & enterprise campuses</li>
+          </ul>
+        </div>
+      </section>
+
       {/* ================= FOOTER ================= */}
       <footer
         style={{
-          borderTop: "1px solid #E6EAF0",
-          padding: "32px 24px",
           textAlign: "center",
+          padding: "32px 20px",
+          borderTop: "1px solid #E5E7EB",
+          background: "#F7F9FC",
           fontSize: "14px",
-          opacity: 0.7,
+          color: "#475569",
         }}
       >
-        © {new Date().getFullYear()} NexAccess Global System
+        © 2026 NexAccess Global System
       </footer>
-
-      {/* ================= RESPONSIVE ================= */}
-      <style>{`
-        @media (min-width: 768px) {
-          .hero-grid {
-            grid-template-columns: 1fr 1fr;
-          }
-        }
-      `}</style>
     </main>
   );
 }
+
+/* ================= STYLES ================= */
+
+const navLink = (active) => ({
+  textDecoration: "none",
+  color: active ? "#123B7A" : "#0B1F3B",
+  fontWeight: active ? 600 : 500,
+});
+
+const primaryBtn = {
+  background: "white",
+  color: "#0B1F3B",
+  padding: "14px 24px",
+  borderRadius: "10px",
+  textDecoration: "none",
+  fontWeight: 600,
+};
+
+const secondaryBtn = {
+  border: "1px solid white",
+  color: "white",
+  padding: "14px 24px",
+  borderRadius: "10px",
+  textDecoration: "none",
+  fontWeight: 600,
+};
+
+const sectionTitle = {
+  fontSize: "32px",
+  marginBottom: "24px",
+};
+
+const listStyle = {
+  fontSize: "18px",
+  lineHeight: "1.8",
+  paddingLeft: "20px",
+};
