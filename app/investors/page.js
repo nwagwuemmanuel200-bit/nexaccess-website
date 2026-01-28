@@ -1,49 +1,33 @@
 export const metadata = {
- title: "Investor & Partner Overview | NexAccess Global System",
-  description:
-    "Investor and partner overview of NexAccess Global System — unified access control, payments, and smart infrastructure for banks, hospitals, malls, and enterprise campuses in Africa.",
+  title: "Investor Overview | NexAccess Global System",
+  description: "Investor and partner overview of NexAccess Global System",
 };
 
-// updated investors page
 export default function InvestorsPage() {
   return (
     <main
       style={{
-        maxWidth: "1000px",
+        maxWidth: "1100px",
         margin: "0 auto",
-        padding: "80px 20px",
-        lineHeight: "1.7",
-        background: "#F7F9FC",
-        borderRadius: "24px"
+        padding: "80px 24px",
+        fontFamily: "system-ui, -apple-system, BlinkMacSystemFont",
+        lineHeight: 1.7,
       }}
     >
+      {/* TITLE */}
+      <h1 style={{ fontSize: "42px", marginBottom: "24px", color: "#0B1F3B" }}>
+        Investor Overview
+      </h1>
 
-      <h1 style={{ fontSize: "42px", marginBottom: "24px" }}>
-  Investor Overview
-</h1>
+      {/* INTRO */}
+      <p style={{ fontSize: "18px", maxWidth: "800px", marginBottom: "48px" }}>
+        NexAccess Global System builds unified access control, payments, and smart
+        infrastructure solutions for banks, hospitals, malls, and enterprise
+        campuses across Nigeria and Africa.
+      </p>
 
-      <section
-  style={{
-    marginBottom: "64px",
-    paddingBottom: "32px",
-    borderBottom: "1px solid #E5E7EB"
-  }}
->
-        <h2 style={{ color: "#0B1F3B" }}>Company Overview</h2>
-        <p>
-          NexAccess Global System builds secure access control and payment
-          infrastructure for banks, hospitals, malls, and enterprise facilities
-          across Nigeria.
-        </p>
-      </section>
-
-      <section
-  style={{
-    marginBottom: "64px",
-    paddingBottom: "32px",
-    borderBottom: "1px solid #E5E7EB"
-  }}
->
+      {/* PROBLEM */}
+      <section style={{ marginBottom: "48px" }}>
         <h2>Problem</h2>
         <ul>
           <li>Fragmented access and payment systems</li>
@@ -52,13 +36,8 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section
-  style={{
-    marginBottom: "64px",
-    paddingBottom: "32px",
-    borderBottom: "1px solid #E5E7EB"
-  }}
->
+      {/* SOLUTION */}
+      <section style={{ marginBottom: "48px" }}>
         <h2>Solution</h2>
         <ul>
           <li>Unified access + payments platform</li>
@@ -67,13 +46,8 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
-      <section
-  style={{
-    marginBottom: "64px",
-    paddingBottom: "32px",
-    borderBottom: "1px solid #E5E7EB"
-  }}
->
+      {/* TARGET MARKETS */}
+      <section style={{ marginBottom: "48px" }}>
         <h2>Target Markets</h2>
         <ul>
           <li>Banks & financial institutions</li>
@@ -83,82 +57,72 @@ export default function InvestorsPage() {
         </ul>
       </section>
 
+      {/* BUSINESS MODEL */}
+      <section style={{ marginBottom: "48px" }}>
+        <h2>Business Model</h2>
+        <ul>
+          <li>Hardware deployment & leasing</li>
+          <li>Software & platform integration</li>
+          <li>Maintenance & support contracts</li>
+        </ul>
+      </section>
+
+      {/* CTA */}
       <section
-  style={{
-    marginBottom: "64px",
-    paddingBottom: "32px",
-    borderBottom: "1px solid #E5E7EB"
-  }}
->
-        <section
-  style={{
-    marginBottom: "64px",
-    paddingBottom: "32px",
-    borderBottom: "1px solid #E5E7EB"
-  }}
->
-  <h2>Investor Highlights</h2>
-  <ul>
-    <li>Multi-sector platform spanning banking, healthcare, and smart infrastructure</li>
-    <li>Hybrid revenue model: hardware, software, and recurring services</li>
-    <li>Strong alignment with regulated environments and compliance requirements</li>
-    <li>Designed for scalable deployment across Nigeria and Africa</li>
-  </ul>
-</section>
+        style={{
+          marginTop: "64px",
+          padding: "48px",
+          background: "#0B1F3B",
+          borderRadius: "20px",
+          textAlign: "center",
+          color: "white",
+        }}
+      >
+        <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
+          Investor Materials
+        </h2>
 
-      <section style={{ marginBottom: "64px" }}>
-  <h2>Partnerships</h2>
-  ...
-</section>
-  <section
-  style={{
-    marginTop: "80px",
-    padding: "48px",
-    background: "#0B1F3B",
-    borderRadius: "24px",
-    color: "white",
-    textAlign: "center"
-  }}
->
-  <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
-  We are actively engaging strategic partners and investors to scale secure access and payment infrastructure across Africa.
-  </h2>
+        <p style={{ maxWidth: "700px", margin: "0 auto 32px" }}>
+          Download our investor presentation or contact us to discuss strategic
+          partnerships.
+        </p>
 
-  <p style={{ maxWidth: "700px", margin: "0 auto 32px", opacity: 0.9 }}>
-    NexAccess Global System is actively exploring strategic partnerships and growth capital to scale secure access control, payments, and smart infrastructure deployments across Africa and emerging markets.
-  </p>
-    <a
-  href="/investor-deck.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{
-    background: "white",
-    color: "#0B1F3B",
-    padding: "14px 28px",
-    borderRadius: "12px",
-    fontWeight: 600,
-    textDecoration: "none"
-  }}
->
-  Download Investor Deck
-</a>
-  <a
-    href="/contact"
-    style={{
-      background: "white",
-      color: "#0B1F3B",
-      padding: "14px 28px",
-      borderRadius: "12px",
-      fontWeight: 600,
-      textDecoration: "none"
-    }}
-  >
-    Contact Investor Relations
-  </a>
-     <div style={{ marginTop: "20px" }}>
-</div>
-</section>
+        {/* DOWNLOAD BUTTON */}
+        <a
+          href="/investor-deck.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-block",
+            background: "white",
+            color: "#0B1F3B",
+            padding: "14px 28px",
+            borderRadius: "12px",
+            fontWeight: 600,
+            textDecoration: "none",
+            marginRight: "16px",
+          }}
+        >
+          Download Investor Deck
+        </a>
 
+        {/* CONTACT BUTTON */}
+        <a
+          href="/contact"
+          style={{
+            display: "inline-block",
+            background: "transparent",
+            color: "white",
+            padding: "14px 28px",
+            borderRadius: "12px",
+            fontWeight: 600,
+            textDecoration: "none",
+            border: "2px solid white",
+          }}
+        >
+          Contact Investor Relations
+        </a>
+      </section>
     </main>
   );
 }
