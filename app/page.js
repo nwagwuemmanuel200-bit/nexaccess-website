@@ -1,7 +1,7 @@
 export const metadata = {
   title: "NexAccess Global System | Unified Access & Payments",
   description:
-    "NexAccess Global System provides secure, compliant access control and payment infrastructure for banks, hospitals, enterprises, and governments across Africa.",
+    "NexAccess Global System builds secure, compliant access control and payment infrastructure for banks, hospitals, and governments across Africa.",
 };
 
 export default function HomePage() {
@@ -14,214 +14,124 @@ export default function HomePage() {
       }}
     >
       {/* HERO SECTION */}
-<section
-  style={{
-    position: "relative",
-    padding: "140px 24px 120px",
-    background: "linear-gradient(135deg, #0B1F3B 0%, #123B7A 100%)",
-    color: "white",
-    overflow: "hidden",
-  }}
->
-  <img
-  src="/images/hero.svg"
-  alt="NexAccess Infrastructure"
-  style={{
-    maxWidth: "520px",
-    width: "100%",
-    margin: "0 auto 60px",
-    opacity: 0.9,
-  }}
-/>
-<div
-  style={{
-    position: "relative",
-    zIndex: 2,
-    maxWidth: "1100px",
-    margin: "0 auto",
-  }}
->
-  <h1
-    style={{
-      fontSize: "48px",
-      fontWeight: 800,
-      marginBottom: "24px",
-      lineHeight: "1.2",
-    }}
-  >
-    Unified Access Control<br />& Payments Infrastructure
-  </h1>
+      <section
+        style={{
+          background:
+            "linear-gradient(135deg, #0B1F3B 0%, #123B7A 100%)",
+          color: "white",
+          padding: "120px 24px",
+          textAlign: "center",
+        }}
+      >
+        <img
+          src="/images/hero.svg"
+          alt="NexAccess Infrastructure"
+          style={{
+            maxWidth: "520px",
+            width: "100%",
+            margin: "0 auto 48px",
+            opacity: 0.95,
+          }}
+        />
 
-  <p
-    style={{
-      maxWidth: "720px",
-      fontSize: "18px",
-      opacity: 0.9,
-      marginBottom: "40px",
-    }}
-  >
-    NexAccess Global System builds secure, compliant access and payment
-    platforms for banks, hospitals, commercial estates, and government
-    facilities across Africa.
-  </p>
+        <h1
+          style={{
+            fontSize: "48px",
+            fontWeight: 800,
+            marginBottom: "24px",
+            lineHeight: "1.2",
+          }}
+        >
+          Unified Access Control & Payments Infrastructure
+        </h1>
 
-  <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-    <a
-      href="/investors"
-      style={{
-        background: "white",
-        color: "#0B1F3B",
-        padding: "14px 28px",
-        borderRadius: "10px",
-        fontWeight: 600,
-        textDecoration: "none",
-      }}
-    >
-      Investor Overview
-    </a>
+        <p
+          style={{
+            maxWidth: "720px",
+            margin: "0 auto 40px",
+            fontSize: "18px",
+            opacity: 0.95,
+          }}
+        >
+          NexAccess Global System builds secure, compliant access and payment
+          platforms for banks, hospitals, commercial estates, and government
+          facilities across Africa.
+        </p>
 
-    <a
-      href="/contact"
-      style={{
-        border: "1px solid white",
-        color: "white",
-        padding: "14px 28px",
-        borderRadius: "10px",
-        fontWeight: 600,
-        textDecoration: "none",
-      }}
-    >
-      Contact Us
-    </a>
-  </div>
-</section>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "16px",
+            flexWrap: "wrap",
+          }}
+        >
+          <a
+            href="/investors"
+            style={{
+              background: "white",
+              color: "#0B1F3B",
+              padding: "14px 28px",
+              borderRadius: "10px",
+              fontWeight: 600,
+              textDecoration: "none",
+            }}
+          >
+            Investor Overview
+          </a>
 
-      {/* CONTENT */}
-      <section style={{ padding: "96px 24px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          {/* PROBLEM */}
-          <Section title="The Problem">
-            <ul>
-              <li>Fragmented access control and payment systems</li>
-              <li>Security and compliance gaps in regulated environments</li>
-              <li>Poor integration between physical and financial access</li>
-            </ul>
-          </Section>
-
-          {/* SOLUTION */}
-          <Section title="Our Solution">
-            <ul>
-              <li>Unified access + payments platform</li>
-              <li>Bank-grade compliance architecture</li>
-              <li>Hardware + software integration model</li>
-            </ul>
-          </Section>
-
-          {/* TARGET MARKETS */}
-          <Section title="Target Markets">
-            <ul>
-              <li>Banks & financial institutions</li>
-              <li>Hospitals & healthcare networks</li>
-              <li>Commercial real estate & malls</li>
-              <li>Government & enterprise campuses</li>
-            </ul>
-          </Section>
-
-          {/* BUSINESS MODEL */}
-          <Section title="Business Model">
-            <ul>
-              <li>Hardware deployment & leasing</li>
-              <li>Software & platform integration</li>
-              <li>Maintenance & long-term support contracts</li>
-            </ul>
-          </Section>
+          <a
+            href="/contact"
+            style={{
+              border: "2px solid white",
+              color: "white",
+              padding: "14px 28px",
+              borderRadius: "10px",
+              fontWeight: 600,
+              textDecoration: "none",
+            }}
+          >
+            Contact Us
+          </a>
         </div>
       </section>
 
-      {/* CALL TO ACTION */}
+      {/* CONTENT SECTION */}
       <section
         style={{
-          padding: "120px 24px",
-          background:
-            "linear-gradient(135deg, #0B1F3B 0%, #0A1A33 100%)",
+          padding: "96px 24px",
         }}
       >
         <div
           style={{
             maxWidth: "900px",
             margin: "0 auto",
-            textAlign: "center",
-            color: "white",
           }}
         >
           <h2 style={{ fontSize: "36px", marginBottom: "24px" }}>
-            Work With NexAccess
+            Our Solution
           </h2>
 
-          <p
-            style={{
-              fontSize: "18px",
-              opacity: 0.9,
-              marginBottom: "48px",
-            }}
-          >
-            We work with OEM manufacturers, banks, and infrastructure
-            operators to deploy compliant, scalable access and payment
-            systems across Africa.
-          </p>
-
-          <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a
-              href="/investors"
-              style={{
-                background: "white",
-                color: "#0B1F3B",
-                padding: "16px 32px",
-                borderRadius: "12px",
-                fontWeight: 600,
-                textDecoration: "none",
-              }}
-            >
-              Investor Relations
-            </a>
-
-            <a
-              href="/contact"
-              style={{
-                border: "2px solid white",
-                color: "white",
-                padding: "16px 32px",
-                borderRadius: "12px",
-                fontWeight: 600,
-                textDecoration: "none",
-              }}
-            >
-              Contact Us
-            </a>
-          </div>
+          <ul style={{ fontSize: "18px", paddingLeft: "20px" }}>
+            <li>Unified access + payments platform</li>
+            <li>Bank-grade compliance architecture</li>
+            <li>Hardware & software integration model</li>
+            <li>Enterprise-ready deployment across Africa</li>
+          </ul>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer
         style={{
+          padding: "40px 24px",
           textAlign: "center",
-          padding: "32px",
-          fontSize: "14px",
           color: "#6B7280",
+          borderTop: "1px solid #E5E7EB",
         }}
       >
         © 2026 NexAccess Global System
       </footer>
     </main>
-  );
-}
-
-function Section({ title, children }) {
-  return (
-    <section style={{ marginBottom: "72px" }}>
-      <h2 style={{ fontSize: "32px", marginBottom: "24px" }}>{title}</h2>
-      <div style={{ fontSize: "18px" }}>{children}</div>
-    </section>
   );
 }
