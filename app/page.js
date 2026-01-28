@@ -1,26 +1,40 @@
+// app/page.js
+
 export const metadata = {
   title: "NexAccess Global System",
   description:
-    "Unified access control, payments, and smart infrastructure for regulated environments",
+    "Unified access control and payment infrastructure for banks, hospitals, enterprises, and government facilities across Africa.",
+};
+
+const BRAND = {
+  dark: "#0B1F3B",
+  blue: "#123B7A",
+  light: "#F5F7FA",
+  gold: "#C9A24D",
 };
 
 export default function HomePage() {
   return (
     <main
       style={{
-        maxWidth: "1200px",
-        margin: "0 auto",
-        padding: "80px 24px",
+        background: BRAND.light,
+        color: BRAND.dark,
         lineHeight: "1.7",
       }}
     >
       {/* HERO SECTION */}
-      <section style={{ marginBottom: "96px" }}>
+      <section
+        style={{
+          padding: "100px 24px 80px",
+          maxWidth: "1200px",
+          margin: "0 auto",
+        }}
+      >
         <h1
           style={{
-            fontSize: "48px",
+            fontSize: "56px",
             fontWeight: 800,
-            maxWidth: "720px",
+            maxWidth: "900px",
             marginBottom: "24px",
           }}
         >
@@ -30,8 +44,8 @@ export default function HomePage() {
         <p
           style={{
             fontSize: "20px",
-            color: "#555",
-            maxWidth: "700px",
+            maxWidth: "720px",
+            color: "#4B5563",
             marginBottom: "40px",
           }}
         >
@@ -44,12 +58,12 @@ export default function HomePage() {
           <a
             href="/investors"
             style={{
-              background: "#0B1F3B",
+              background: BRAND.dark,
               color: "white",
               padding: "14px 28px",
-              borderRadius: "12px",
-              textDecoration: "none",
+              borderRadius: "10px",
               fontWeight: 600,
+              textDecoration: "none",
             }}
           >
             Investor Overview
@@ -58,12 +72,12 @@ export default function HomePage() {
           <a
             href="/contact"
             style={{
-              border: "2px solid #0B1F3B",
-              color: "#0B1F3B",
+              border: `2px solid ${BRAND.dark}`,
+              color: BRAND.dark,
               padding: "14px 28px",
-              borderRadius: "12px",
-              textDecoration: "none",
+              borderRadius: "10px",
               fontWeight: 600,
+              textDecoration: "none",
             }}
           >
             Contact Us
@@ -71,67 +85,104 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHAT WE SOLVE */}
-      <section style={{ marginBottom: "72px" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
-          The Problem We Solve
-        </h2>
-        <ul style={{ fontSize: "18px", color: "#444" }}>
-          <li>Fragmented access control and payment systems</li>
-          <li>Security and compliance gaps in regulated environments</li>
-          <li>Poor integration between physical and financial access</li>
-        </ul>
+      {/* PROBLEM */}
+      <section
+        style={{
+          background: "white",
+          padding: "80px 24px",
+        }}
+      >
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "36px", marginBottom: "24px" }}>The Problem</h2>
+          <ul style={{ fontSize: "18px", color: "#374151" }}>
+            <li>Fragmented access control and payment systems</li>
+            <li>Security and compliance gaps in regulated environments</li>
+            <li>Poor integration between physical and financial access</li>
+          </ul>
+        </div>
       </section>
 
       {/* SOLUTION */}
-      <section style={{ marginBottom: "72px" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
-          Our Solution
-        </h2>
-        <ul style={{ fontSize: "18px", color: "#444" }}>
-          <li>Unified access + payments platform</li>
-          <li>Bank-grade compliance architecture</li>
-          <li>Hardware + software integration model</li>
-        </ul>
+      <section
+        style={{
+          background: BRAND.light,
+          padding: "80px 24px",
+        }}
+      >
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "36px", marginBottom: "24px" }}>
+            Our Solution
+          </h2>
+          <ul style={{ fontSize: "18px", color: "#374151" }}>
+            <li>Unified access + payments platform</li>
+            <li>Bank-grade compliance architecture</li>
+            <li>Hardware + software integration model</li>
+          </ul>
+        </div>
       </section>
 
       {/* TARGET MARKETS */}
-      <section style={{ marginBottom: "72px" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
-          Target Markets
-        </h2>
-        <ul style={{ fontSize: "18px", color: "#444" }}>
-          <li>Banks & financial institutions</li>
-          <li>Hospitals & healthcare networks</li>
-          <li>Commercial real estate & malls</li>
-          <li>Government & enterprise campuses</li>
-        </ul>
+      <section
+        style={{
+          background: "white",
+          padding: "80px 24px",
+        }}
+      >
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "36px", marginBottom: "24px" }}>
+            Target Markets
+          </h2>
+          <ul style={{ fontSize: "18px", color: "#374151" }}>
+            <li>Banks & financial institutions</li>
+            <li>Hospitals & healthcare networks</li>
+            <li>Commercial real estate & malls</li>
+            <li>Government & enterprise campuses</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* BUSINESS MODEL */}
+      <section
+        style={{
+          background: BRAND.light,
+          padding: "80px 24px",
+        }}
+      >
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "36px", marginBottom: "24px" }}>
+            Business Model
+          </h2>
+          <ul style={{ fontSize: "18px", color: "#374151" }}>
+            <li>Hardware deployment & leasing</li>
+            <li>Software & platform integration</li>
+            <li>Maintenance & long-term support contracts</li>
+          </ul>
+        </div>
       </section>
 
       {/* CTA */}
       <section
         style={{
-          background: "#0B1F3B",
+          background: BRAND.dark,
           color: "white",
-          padding: "64px 40px",
-          borderRadius: "24px",
+          padding: "100px 24px",
           textAlign: "center",
         }}
       >
         <h2 style={{ fontSize: "36px", marginBottom: "16px" }}>
-          Work With NexAccess
+          Investors & Strategic Partners
         </h2>
 
         <p
           style={{
             fontSize: "18px",
-            maxWidth: "640px",
+            maxWidth: "700px",
             margin: "0 auto 40px",
             opacity: 0.9,
           }}
         >
-          We collaborate with OEM manufacturers, banks, and infrastructure
-          operators to deploy compliant, scalable access and payment systems.
+          Download our investor presentation or contact us to explore strategic
+          partnerships.
         </p>
 
         <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
@@ -139,11 +190,11 @@ export default function HomePage() {
             href="/investors"
             style={{
               background: "white",
-              color: "#0B1F3B",
+              color: BRAND.dark,
               padding: "14px 28px",
-              borderRadius: "12px",
-              textDecoration: "none",
+              borderRadius: "10px",
               fontWeight: 600,
+              textDecoration: "none",
             }}
           >
             Investor Relations
@@ -155,9 +206,9 @@ export default function HomePage() {
               border: "2px solid white",
               color: "white",
               padding: "14px 28px",
-              borderRadius: "12px",
-              textDecoration: "none",
+              borderRadius: "10px",
               fontWeight: 600,
+              textDecoration: "none",
             }}
           >
             Contact Us
