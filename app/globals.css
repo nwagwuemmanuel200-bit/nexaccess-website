@@ -44,3 +44,20 @@ section {
     transform: translateY(0);
   }
 }
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.section-muted {
+  background: #f1f5fb;
+  padding: 96px 0;
+}
+
+.section-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 64px 0;
+}
