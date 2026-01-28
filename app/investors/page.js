@@ -1,128 +1,149 @@
 export const metadata = {
-  title: "Investor Overview | NexAccess Global System",
-  description: "Investor and partner overview of NexAccess Global System",
+  title: "Investors | NexAccess Global System",
+  description:
+    "Investor and partner overview of NexAccess Global System.",
+};
+
+const BRAND = {
+  blueDark: "#0B1F3B",
+  gold: "#C9A24D",
 };
 
 export default function InvestorsPage() {
   return (
-    <main
-      style={{
-        maxWidth: "1100px",
-        margin: "0 auto",
-        padding: "80px 24px",
-        fontFamily: "system-ui, -apple-system, BlinkMacSystemFont",
-        lineHeight: 1.7,
-      }}
-    >
+    <main style={{ maxWidth: "1000px", margin: "0 auto", padding: "80px 20px" }}>
       {/* TITLE */}
-      <h1 style={{ fontSize: "42px", marginBottom: "24px", color: "#0B1F3B" }}>
+      <h1 style={{ fontSize: "44px", color: BRAND.blueDark, marginBottom: "24px" }}>
         Investor Overview
       </h1>
 
-      {/* INTRO */}
-      <p style={{ fontSize: "18px", maxWidth: "800px", marginBottom: "48px" }}>
-        NexAccess Global System builds unified access control, payments, and smart
-        infrastructure solutions for banks, hospitals, malls, and enterprise
-        campuses across Nigeria and Africa.
+      <p style={{ fontSize: "18px", color: "#374151", marginBottom: "64px" }}>
+        NexAccess Global System is building unified access control and payment
+        infrastructure for highly regulated environments across Africa.
       </p>
 
       {/* PROBLEM */}
-      <section style={{ marginBottom: "48px" }}>
-        <h2>Problem</h2>
+      <Section title="Problem">
         <ul>
-          <li>Fragmented access and payment systems</li>
-          <li>Security risks in regulated environments</li>
-          <li>Poor integration between physical and financial access</li>
+          <li>Fragmented access control and payment systems</li>
+          <li>Security and compliance gaps in regulated facilities</li>
+          <li>Operational inefficiencies across physical infrastructure</li>
         </ul>
-      </section>
+      </Section>
 
       {/* SOLUTION */}
-      <section style={{ marginBottom: "48px" }}>
-        <h2>Solution</h2>
+      <Section title="Solution">
         <ul>
           <li>Unified access + payments platform</li>
-          <li>Bank-grade compliance approach</li>
+          <li>Bank-grade compliance architecture</li>
           <li>Hardware + software integration model</li>
         </ul>
-      </section>
+      </Section>
 
       {/* TARGET MARKETS */}
-      <section style={{ marginBottom: "48px" }}>
-        <h2>Target Markets</h2>
+      <Section title="Target Markets">
         <ul>
           <li>Banks & financial institutions</li>
           <li>Hospitals & healthcare networks</li>
           <li>Commercial real estate & malls</li>
           <li>Government & enterprise campuses</li>
         </ul>
-      </section>
+      </Section>
 
       {/* BUSINESS MODEL */}
-      <section style={{ marginBottom: "48px" }}>
-        <h2>Business Model</h2>
+      <Section title="Business Model">
         <ul>
           <li>Hardware deployment & leasing</li>
           <li>Software & platform integration</li>
-          <li>Maintenance & support contracts</li>
+          <li>Maintenance & long-term support contracts</li>
         </ul>
-      </section>
+      </Section>
 
       {/* CTA */}
       <section
         style={{
-          marginTop: "64px",
-          padding: "48px",
-          background: "#0B1F3B",
-          borderRadius: "20px",
-          textAlign: "center",
+          marginTop: "80px",
+          padding: "56px 32px",
+          background: BRAND.blueDark,
+          borderRadius: "24px",
           color: "white",
+          textAlign: "center",
         }}
       >
-        <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>
           Investor Materials
         </h2>
 
-        <p style={{ maxWidth: "700px", margin: "0 auto 32px" }}>
+        <p style={{ maxWidth: "600px", margin: "0 auto 32px", opacity: 0.9 }}>
           Download our investor presentation or contact us to discuss strategic
           partnerships.
         </p>
 
-        {/* DOWNLOAD BUTTON */}
-        <a
-          href="/investor-deck.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-block",
-            background: "white",
-            color: "#0B1F3B",
-            padding: "14px 28px",
-            borderRadius: "12px",
-            fontWeight: 600,
-            textDecoration: "none",
-            marginRight: "16px",
-          }}
-        >
-          Download Investor Deck
-        </a>
+        <div style={{ display: "flex", justifyContent: "center", gap: "16px" }}>
+          <a
+            href="/investor-deck.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={primaryButton}
+          >
+            Download Investor Deck
+          </a>
 
-        {/* CONTACT BUTTON */}
-        <a
-          href="/contact"
-          style={{
-            display: "inline-block",
-            background: "transparent",
-            color: "white",
-            padding: "14px 28px",
-            borderRadius: "12px",
-            fontWeight: 600,
-            textDecoration: "none",
-            border: "2px solid white",
-          }}
-        >
-          Contact Investor Relations
-        </a>
+          <a href="/contact" style={outlineButton}>
+            Contact Investor Relations
+          </a>
+        </div>
       </section>
+
+      <footer
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          fontSize: "14px",
+          color: "#6B7280",
+        }}
+      >
+        © 2026 NexAccess Global System
+      </footer>
     </main>
   );
 }
+
+/* ---------- COMPONENTS ---------- */
+
+function Section({ title, children }) {
+  return (
+    <section
+      style={{
+        marginBottom: "56px",
+        paddingBottom: "32px",
+        borderBottom: "1px solid #E5E7EB",
+      }}
+    >
+      <h2 style={{ fontSize: "26px", color: "#0B1F3B", marginBottom: "16px" }}>
+        {title}
+      </h2>
+      {children}
+    </section>
+  );
+}
+
+/* ---------- STYLES ---------- */
+
+const primaryButton = {
+  background: "white",
+  color: BRAND.blueDark,
+  padding: "14px 28px",
+  borderRadius: "12px",
+  textDecoration: "none",
+  fontWeight: 600,
+};
+
+const outlineButton = {
+  border: "1px solid white",
+  color: "white",
+  padding: "14px 28px",
+  borderRadius: "12px",
+  textDecoration: "none",
+  fontWeight: 600,
+};
