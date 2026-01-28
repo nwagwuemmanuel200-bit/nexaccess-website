@@ -1,52 +1,47 @@
 export const metadata = {
-  title: "Investor Relations | NexAccess Global System",
+  title: "Contact | NexAccess Global System",
   description:
-    "Contact NexAccess Global System investor relations for partnerships and investment inquiries.",
+    "Contact NexAccess Global System for partnerships and enterprise deployments.",
+};
+
+const BRAND = {
+  blueDark: "#0B1F3B",
 };
 
 export default function ContactPage() {
   return (
-    <main
-      style={{
-        maxWidth: "900px",
-        margin: "0 auto",
-        padding: "80px 24px",
-        lineHeight: "1.7",
-      }}
-    >
-      <h1 style={{ fontSize: "40px", marginBottom: "24px" }}>
-        Investor Relations
+    <main style={{ maxWidth: "800px", margin: "0 auto", padding: "80px 20px" }}>
+      <h1 style={{ fontSize: "42px", color: BRAND.blueDark, marginBottom: "24px" }}>
+        Contact Us
       </h1>
 
-      <p style={{ fontSize: "18px", color: "#444", marginBottom: "40px" }}>
-        NexAccess Global System welcomes strategic investors, institutional
-        partners, and infrastructure stakeholders.
+      <p style={{ fontSize: "18px", color: "#374151", marginBottom: "48px" }}>
+        For partnerships, enterprise deployments, or investor discussions,
+        please reach out using the details below.
       </p>
 
       <section
         style={{
-          background: "#F7F9FC",
+          background: "#F9FAFB",
           padding: "32px",
           borderRadius: "16px",
         }}
       >
-        <h2 style={{ marginBottom: "16px" }}>Contact Details</h2>
-
-        <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:invest@nexaccess.com">
-            invest@nexaccess.com
-          </a>
-        </p>
-
-        <p>
-          <strong>Focus Markets:</strong> Nigeria & Africa
-        </p>
-
-        <p>
-          <strong>Company:</strong> NexAccess Global System Ltd
-        </p>
+        <p><strong>Email:</strong> partnerships@nexaccessglobal.com</p>
+        <p><strong>Region:</strong> Nigeria & Africa</p>
+        <p><strong>Focus:</strong> Banks, hospitals, malls, enterprise campuses</p>
       </section>
+
+      <footer
+        style={{
+          marginTop: "80px",
+          textAlign: "center",
+          fontSize: "14px",
+          color: "#6B7280",
+        }}
+      >
+        © 2026 NexAccess Global System
+      </footer>
     </main>
   );
 }
